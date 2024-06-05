@@ -24,9 +24,14 @@
 
 ###
 
-<div align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=kaos599.kaos599&right_color=darkviolet&left_text=Profile%20Views"  />
-</div>
+
+<p align="center">
+    <a href="https://visitcount.itsvg.in">
+        <img src="https://visitcount.itsvg.in/api?id=Kaos599&icon=0&color=8" alt="Visitor Count"/>
+    </a>
+</p>
+
+
 
 ###
 
@@ -208,3 +213,8 @@
 </div>
 
 ###
+
+<p align="center">
+    <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote"/>
+</p>
+
