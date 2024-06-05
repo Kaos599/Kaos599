@@ -30,6 +30,14 @@
 
 ###
 
+<br clear="both">
+
+<img src="https://raw.githubusercontent.com/kaos599/kaos599/output/snake.svg" alt="Snake animation" />
+
+###
+
+###
+
 <div align="center">
   <a href="https://www.linkedin.com/in/harshdayal/" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
@@ -199,13 +207,6 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" height="30" alt="photoshop logo"  />
 </div>
 
-###
-
-<br clear="both">
-
-<img src="https://raw.githubusercontent.com/kaos599/kaos599/output/snake.svg" alt="Snake animation" />
-
-###
 
 <div align="center">
   <img src="https://github-read-medium-git-main.pahlevikun.vercel.app/latest?limit=2&username=dayal700007&theme=rose_pine" alt="Layout with last medium posts"  />
