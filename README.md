@@ -207,9 +207,4 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" height="30" alt="photoshop logo"  />
 </div>
 
-
-<div align="center">
-  <img src="https://github-read-medium-git-main.pahlevikun.vercel.app/latest?limit=2&username=dayal700007&theme=rose_pine" alt="Layout with last medium posts"  />
-</div>
-
 ###
