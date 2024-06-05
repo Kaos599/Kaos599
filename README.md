@@ -203,7 +203,7 @@
 
 <br clear="both">
 
-![snake gif](https://github.com/Kaos599/Kaos599/blob/output/github-contribution-grid-snake.gif
+<img src="https://raw.githubusercontent.com/kaos599/kaos599/output/snake.svg" alt="Snake animation" />
 
 ###
 
