@@ -203,7 +203,7 @@
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/kaos599/kaos599/output/snake.svg" alt="Snake animation" />
+<img src="https://raw.githubusercontent.com/kaos599//output/snake.svg" alt="Snake animation" />
 
 ###
 
