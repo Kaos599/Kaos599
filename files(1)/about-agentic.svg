@@ -1,0 +1,201 @@
+<svg width="800" height="380" viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes cursor-blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      @keyframes type-line1 { 0%, 5% { width: 0; } 18%, 100% { width: 100%; } }
+      @keyframes type-line2 { 0%, 22% { width: 0; } 38%, 100% { width: 100%; } }
+      @keyframes type-line3 { 0%, 42% { width: 0; } 58%, 100% { width: 100%; } }
+      @keyframes type-line4 { 0%, 62% { width: 0; } 78%, 100% { width: 100%; } }
+      @keyframes type-line5 { 0%, 82% { width: 0; } 95%, 100% { width: 100%; } }
+      @keyframes appear1 { 0%, 5% { opacity: 0; } 6%, 100% { opacity: 1; } }
+      @keyframes appear2 { 0%, 22% { opacity: 0; } 23%, 100% { opacity: 1; } }
+      @keyframes appear3 { 0%, 42% { opacity: 0; } 43%, 100% { opacity: 1; } }
+      @keyframes appear4 { 0%, 62% { opacity: 0; } 63%, 100% { opacity: 1; } }
+      @keyframes appear5 { 0%, 82% { opacity: 0; } 83%, 100% { opacity: 1; } }
+      @keyframes matrix-rain-t {
+        0% { transform: translateY(-380px); opacity: 0; }
+        8% { opacity: 0.8; }
+        92% { opacity: 0.8; }
+        100% { transform: translateY(380px); opacity: 0; }
+      }
+      @keyframes glitch-flash {
+        0%, 100% { opacity: 0; transform: translate(0,0) scaleX(1); }
+        /* Trigger on hover simulation - visible for 2 seconds every 12 seconds */
+        75%, 76% { opacity: 0; }
+        77% { opacity: 1; transform: translate(-3px, 2px) scaleX(1.02); }
+        78% { opacity: 0; }
+        79% { opacity: 1; transform: translate(4px, -1px) scaleX(0.98); }
+        80%, 83% { opacity: 0; }
+        84% { opacity: 0.8; transform: translate(-2px, 1px); }
+        85%, 100% { opacity: 0; }
+      }
+      @keyframes reveal-override {
+        0%, 85% { opacity: 0; height: 0; }
+        86%, 100% { opacity: 1; height: auto; }
+      }
+      @keyframes scanbar {
+        0%, 100% { transform: translateY(0); opacity: 0.03; }
+        50% { transform: translateY(340px); opacity: 0.05; }
+      }
+      @keyframes progress-fill {
+        0%, 5% { width: 0; }
+        100% { width: 100%; }
+      }
+      @keyframes border-draw {
+        0% { stroke-dashoffset: 2400; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .mono { font-family: 'Courier New', monospace; }
+      .prompt { fill: #39d353; }
+      .dim { fill: #39d35399; }
+      .cursor { fill: #39d353; animation: cursor-blink 0.8s step-end infinite; }
+      .border-anim { stroke-dasharray: 2400; animation: border-draw 2s ease-out both; }
+    </style>
+    <filter id="glow-t">
+      <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-sm-t">
+      <feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="line1-clip"><rect x="0" y="0" width="100%" height="16" style="animation: type-line1 12s steps(40) infinite;"/></clipPath>
+    <linearGradient id="bg-t" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c1014"/>
+      <stop offset="100%" style="stop-color:#080c0a"/>
+    </linearGradient>
+    <linearGradient id="header-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#161c1a"/>
+      <stop offset="100%" style="stop-color:#121812"/>
+    </linearGradient>
+    <linearGradient id="progress-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#39d353"/>
+      <stop offset="100%" style="stop-color:#22c55e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- BG -->
+  <rect width="800" height="380" fill="url(#bg-t)"/>
+
+  <!-- Matrix rain on sides -->
+  <g opacity="0.09" class="mono" font-size="10" fill="#39d353">
+    <text x="15" y="0" style="animation: matrix-rain-t 3.5s linear 0.2s infinite;">1<tspan x="15" dy="14">0</tspan><tspan x="15" dy="14">1</tspan><tspan x="15" dy="14">0</tspan><tspan x="15" dy="14">1</tspan></text>
+    <text x="775" y="0" style="animation: matrix-rain-t 4.1s linear 1.4s infinite;">0<tspan x="775" dy="14">1</tspan><tspan x="775" dy="14">1</tspan><tspan x="775" dy="14">0</tspan></text>
+  </g>
+
+  <!-- Terminal window -->
+  <rect x="35" y="20" width="730" height="340" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="35" y="20" width="730" height="340" rx="4" fill="none" stroke="#39d353" stroke-width="0.5" opacity="0.3" class="border-anim"/>
+
+  <!-- Scanline inside terminal -->
+  <rect x="35" y="20" width="730" height="340" rx="4" fill="none"/>
+  <rect x="36" y="20" width="728" height="6" fill="#39d353" opacity="0.02" style="animation: scanbar 4s ease-in-out infinite;"/>
+
+  <!-- Terminal header bar -->
+  <rect x="35" y="20" width="730" height="36" rx="4" fill="url(#header-grad)"/>
+  <rect x="35" y="42" width="730" height="14" fill="#161c1a"/>
+  <rect x="35" y="42" width="730" height="1" fill="#30363d"/>
+
+  <!-- Traffic lights -->
+  <circle cx="62" cy="38" r="7" fill="#ff5f57" opacity="0.9"/>
+  <circle cx="84" cy="38" r="7" fill="#febc2e" opacity="0.9"/>
+  <circle cx="106" cy="38" r="7" fill="#28c840" opacity="0.9" filter="url(#glow-sm-t)"/>
+
+  <!-- Title bar text -->
+  <text x="400" y="43" class="mono" font-size="11" fill="#8b949e" text-anchor="middle" letter-spacing="2">kaos@prometheus:~  —  bash  —  80×24</text>
+
+  <!-- Separator -->
+  <line x1="36" y1="56" x2="764" y2="56" stroke="#39d35320" stroke-width="1"/>
+
+  <!-- Terminal content -->
+  <g class="mono" font-size="12">
+
+    <!-- Line 1: python init -->
+    <g style="animation: appear1 12s linear infinite;">
+      <text x="58" y="85" fill="#39d353">❯</text>
+      <text x="70" y="85" fill="#8b949e">python</text>
+      <text x="118" y="85" fill="#39d353"> agent.py</text>
+      <text x="200" y="85" fill="#58a6ff"> --mode</text>
+      <text x="258" y="85" fill="#ffa657"> intro</text>
+    </g>
+
+    <!-- Line 2: loading -->
+    <g style="animation: appear2 12s linear infinite;">
+      <text x="58" y="108" fill="#39d35360">&gt;&gt;&gt;</text>
+      <text x="82" y="108" fill="#39d35399"> [</text>
+      <!-- Progress bar -->
+      <rect x="101" y="97" width="120" height="8" rx="1" fill="#1c2a1c" style="animation: appear2 12s linear infinite;"/>
+      <rect x="101" y="97" width="120" height="8" rx="1" fill="url(#progress-grad)" opacity="0.9" style="animation: appear2 12s linear infinite; width: 120px;"/>
+      <text x="228" y="108" fill="#39d35399">]</text>
+      <text x="238" y="108" fill="#39d353"> initializing agentic runtime...</text>
+    </g>
+
+    <!-- Line 3: about statement -->
+    <g style="animation: appear3 12s linear infinite;">
+      <text x="58" y="138" fill="#39d35360">&gt;&gt;&gt;</text>
+      <text x="82" y="138" fill="#8b949e"> sys.stdout.write(</text>
+      <text x="247" y="138" fill="#ffa657">"</text>
+      <text x="255" y="138" fill="#e2e8f0">AI Engineer who builds agents, not apps</text>
+      <text x="560" y="138" fill="#ffa657">"</text>
+      <text x="568" y="138" fill="#8b949e">)</text>
+    </g>
+
+    <!-- Line 4: stack -->
+    <g style="animation: appear4 12s linear infinite;">
+      <text x="58" y="168" fill="#39d35360">&gt;&gt;&gt;</text>
+      <text x="82" y="168" fill="#8b949e"> stack </text>
+      <text x="126" y="168" fill="#39d353">=</text>
+      <text x="134" y="168" fill="#8b949e"> [</text>
+      <text x="148" y="168" fill="#ffa657">"LangGraph"</text>
+      <text x="234" y="168" fill="#8b949e">,</text>
+      <text x="240" y="168" fill="#ffa657"> "ChromaDB"</text>
+      <text x="322" y="168" fill="#8b949e">,</text>
+      <text x="328" y="168" fill="#ffa657"> "FastAPI"</text>
+      <text x="402" y="168" fill="#8b949e">,</text>
+      <text x="408" y="168" fill="#ffa657"> "PyTorch"</text>
+      <text x="480" y="168" fill="#8b949e">]</text>
+    </g>
+
+    <!-- Line 5: output response -->
+    <g style="animation: appear5 12s linear infinite;">
+      <text x="58" y="198" fill="#39d353">✓</text>
+      <text x="72" y="198" fill="#39d353"> RUNTIME ONLINE  </text>
+      <text x="200" y="198" fill="#8b949e">· </text>
+      <text x="216" y="198" fill="#58a6ff">Google GenAI Hackathon Winner</text>
+      <text x="468" y="198" fill="#8b949e"> · </text>
+      <text x="480" y="198" fill="#8b949e">Top 5 @ Build with AI</text>
+    </g>
+
+    <!-- Separator line -->
+    <line x1="58" y1="215" x2="742" y2="215" stroke="#39d35318" stroke-width="1"/>
+
+    <!-- Static bottom block: key facts -->
+    <g fill="#39d35366" font-size="10" style="animation: appear5 12s linear infinite;">
+      <text x="58" y="238">PROJECTS  →</text>
+      <text x="148" y="238" fill="#8b949e">Cascade (Winner)  ·  Faraday  ·  LegalSphere  ·  Apollo  ·  Sprout  ·  Numerate</text>
+
+      <text x="58" y="258">CERTS     →</text>
+      <text x="148" y="258" fill="#8b949e">Stanford Algorithms  ·  UIUC Cloud  ·  IBM Cybersecurity  ·  GitHub Foundation</text>
+
+      <text x="58" y="278">SERVICES  →</text>
+      <text x="148" y="278" fill="#8b949e">Fine-tuning  ·  Agentic Workflows  ·  Data Pipelines  ·  Synthetic Datasets</text>
+    </g>
+
+    <!-- Active prompt line -->
+    <text x="58" y="320" fill="#39d353">❯</text>
+    <text x="70" y="320" fill="#39d35380">_</text>
+    <rect x="70" y="308" width="8" height="14" class="cursor"/>
+  </g>
+
+  <!-- Status bar at bottom -->
+  <rect x="35" y="340" width="730" height="20" fill="#161c1a"/>
+  <line x1="36" y1="340" x2="764" y2="340" stroke="#30363d" stroke-width="1"/>
+  <text x="58" y="355" class="mono" font-size="9" fill="#39d35366" letter-spacing="1">INSERT  |  UTF-8  |  PYTHON  |  AGENTS: 3 ACTIVE  |  MEM: 73%  |  KAOS_SYSTEM v4.2.1</text>
+  <circle cx="745" cy="350" r="4" fill="#39d353" opacity="0.8" filter="url(#glow-sm-t)"/>
+
+  <!-- Outer frame corners -->
+  <g stroke="#39d353" fill="none" stroke-width="1.5" opacity="0.5">
+    <polyline points="10,40 10,10 40,10"/>
+    <polyline points="760,10 790,10 790,40"/>
+    <polyline points="10,340 10,370 40,370"/>
+    <polyline points="760,370 790,370 790,340"/>
+  </g>
+</svg>

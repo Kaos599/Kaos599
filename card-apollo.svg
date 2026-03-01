@@ -1,0 +1,134 @@
+<svg fill="none" viewBox="0 0 800 180" width="800" height="180" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .container {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+          background-color: #0d1117;
+          color: #c9d1d9;
+          width: 780px;
+          height: 160px;
+          margin: 10px;
+          position: relative;
+          box-sizing: border-box;
+          border: 1px solid #30363d;
+          border-radius: 8px;
+          padding: 24px;
+          transition: all 0.3s ease;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .container:hover {
+          border-color: #39d353;
+          box-shadow: 0 0 15px rgba(57, 211, 83, 0.2);
+          transform: translateY(-2px);
+        }
+
+        .title {
+          font-size: 24px;
+          font-weight: 600;
+          color: #58a6ff;
+          margin: 0 0 8px 0;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .title span {
+          color: #39d353;
+        }
+
+        .highlight {
+          font-size: 13px;
+          color: #e3b341;
+          background: rgba(227, 179, 65, 0.1);
+          padding: 4px 8px;
+          border-radius: 4px;
+          display: inline-block;
+          margin-bottom: 12px;
+          font-weight: 500;
+        }
+
+        .description {
+          font-size: 14px;
+          line-height: 1.5;
+          margin-bottom: 16px;
+          max-width: 90%;
+          color: #8b949e;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        .tags {
+          display: flex;
+          gap: 8px;
+        }
+
+        .tag {
+          font-size: 12px;
+          color: #39d353;
+          border: 1px solid #39d353;
+          padding: 2px 8px;
+          border-radius: 12px;
+          background: rgba(57, 211, 83, 0.05);
+        }
+
+        /* Ambient glowing background */
+        .glow {
+          position: absolute;
+          right: -50px;
+          bottom: -50px;
+          width: 150px;
+          height: 150px;
+          background: radial-gradient(circle, rgba(57, 211, 83, 0.1) 0%, rgba(0,0,0,0) 70%);
+          border-radius: 50%;
+          pointer-events: none;
+        }
+        
+        /* Apollo animated icon */
+        .icon {
+            position: absolute;
+            right: 40px;
+            top: 40px;
+            width: 80px;
+            height: 80px;
+            opacity: 0.2;
+            transition: all 0.3s ease;
+        }
+
+        .container:hover .icon {
+            opacity: 0.8;
+            transform: scale(1.1) translateY(-5px);
+            filter: drop-shadow(0 0 10px #39d353);
+        }
+      </style>
+
+      <div class="container">
+        <div class="glow"></div>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#39d353" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+            <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+        </svg>
+        <h2 class="title">Apollo <span>::</span> RAG-Powered Space Researcher</h2>
+        <div>
+          <span class="highlight">🚀 Advanced Space Domain Intelligence</span>
+        </div>
+        <div class="description">
+          A highly specialized RAG (Retrieval-Augmented Generation) system parsing through millions of astronomical documents to act as an expert space researcher and analyst.
+        </div>
+        <div class="tags">
+          <span class="tag">RAG Architecture</span>
+          <span class="tag">ChromaDB</span>
+          <span class="tag">Astrophysics Datasets</span>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

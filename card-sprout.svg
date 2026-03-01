@@ -1,0 +1,132 @@
+<svg fill="none" viewBox="0 0 800 180" width="800" height="180" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .container {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+          background-color: #0d1117;
+          color: #c9d1d9;
+          width: 780px;
+          height: 160px;
+          margin: 10px;
+          position: relative;
+          box-sizing: border-box;
+          border: 1px solid #30363d;
+          border-radius: 8px;
+          padding: 24px;
+          transition: all 0.3s ease;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .container:hover {
+          border-color: #39d353;
+          box-shadow: 0 0 15px rgba(57, 211, 83, 0.2);
+          transform: translateY(-2px);
+        }
+
+        .title {
+          font-size: 24px;
+          font-weight: 600;
+          color: #58a6ff;
+          margin: 0 0 8px 0;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .title span {
+          color: #39d353;
+        }
+
+        .highlight {
+          font-size: 13px;
+          color: #e3b341;
+          background: rgba(227, 179, 65, 0.1);
+          padding: 4px 8px;
+          border-radius: 4px;
+          display: inline-block;
+          margin-bottom: 12px;
+          font-weight: 500;
+        }
+
+        .description {
+          font-size: 14px;
+          line-height: 1.5;
+          margin-bottom: 16px;
+          max-width: 90%;
+          color: #8b949e;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        .tags {
+          display: flex;
+          gap: 8px;
+        }
+
+        .tag {
+          font-size: 12px;
+          color: #39d353;
+          border: 1px solid #39d353;
+          padding: 2px 8px;
+          border-radius: 12px;
+          background: rgba(57, 211, 83, 0.05);
+        }
+
+        /* Ambient glowing background */
+        .glow {
+          position: absolute;
+          right: -50px;
+          bottom: -50px;
+          width: 150px;
+          height: 150px;
+          background: radial-gradient(circle, rgba(57, 211, 83, 0.1) 0%, rgba(0,0,0,0) 70%);
+          border-radius: 50%;
+          pointer-events: none;
+        }
+        
+        /* Sprout animated icon */
+        .icon {
+            position: absolute;
+            right: 40px;
+            top: 40px;
+            width: 80px;
+            height: 80px;
+            opacity: 0.2;
+            transition: all 0.3s ease;
+        }
+
+        .container:hover .icon {
+            opacity: 0.8;
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 10px #39d353);
+        }
+      </style>
+
+      <div class="container">
+        <div class="glow"></div>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#39d353" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+        </svg>
+        <h2 class="title">Sprout <span>::</span> Community GenAI Agent</h2>
+        <div>
+          <span class="highlight">⭐ Next-Gen Community Growth</span>
+        </div>
+        <div class="description">
+          An autonomous generative AI agent deployed to foster engagement, answer technical queries, and organically grow online developer communities via conversational AI.
+        </div>
+        <div class="tags">
+          <span class="tag">LLM SWARM</span>
+          <span class="tag">Discord Bot</span>
+          <span class="tag">LangChain</span>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

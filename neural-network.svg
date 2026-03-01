@@ -1,0 +1,157 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes dash-flow {
+        0% { stroke-dashoffset: 200; opacity: 0; }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { stroke-dashoffset: 0; opacity: 0; }
+      }
+      @keyframes node-pulse-1 {
+        0%, 100% { fill: #161c1a; stroke: #39d35340; filter: none; }
+        10% { fill: #39d353; stroke: #39d353; filter: url(#glow); }
+        30% { fill: #161c1a; stroke: #39d35340; filter: none; }
+      }
+      @keyframes node-pulse-2 {
+        0%, 100% { fill: #161c1a; stroke: #39d35340; filter: none; }
+        35% { fill: #161c1a; stroke: #39d35340; filter: none; }
+        45% { fill: #39d353; stroke: #39d353; filter: url(#glow); }
+        65% { fill: #161c1a; stroke: #39d35340; filter: none; }
+      }
+      @keyframes node-pulse-3 {
+        0%, 100% { fill: #161c1a; stroke: #39d35340; filter: none; }
+        70% { fill: #161c1a; stroke: #39d35340; filter: none; }
+        80% { fill: #39d353; stroke: #39d353; filter: url(#glow); }
+        100% { fill: #161c1a; stroke: #39d35340; filter: none; }
+      }
+      @keyframes scan-v {
+        0% { transform: translateX(-100px); }
+        100% { transform: translateX(900px); }
+      }
+      .mono { font-family: 'Courier New', monospace; }
+      .base-edge { fill: none; stroke: #39d35315; stroke-width: 1; }
+      .active-edge {
+        fill: none; 
+        stroke: #39d353; 
+        stroke-width: 1.5; 
+        stroke-dasharray: 10 190; 
+        filter: url(#glow-sm);
+      }
+      .node { r: 6; stroke-width: 2; }
+    </style>
+
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow-sm"><feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050708"/>
+      <stop offset="100%" style="stop-color:#0b110b"/>
+    </linearGradient>
+    <linearGradient id="scan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#39d35300"/>
+      <stop offset="50%" style="stop-color:#39d35315"/>
+      <stop offset="100%" style="stop-color:#39d35300"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bg)"/>
+
+  <!-- Background Grid -->
+  <g opacity="0.03" stroke="#39d353" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100"/><line x1="0" y1="200" x2="800" y2="200"/><line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="200" y1="0" x2="200" y2="400"/><line x1="400" y1="0" x2="400" y2="400"/><line x1="600" y1="0" x2="600" y2="400"/>
+  </g>
+
+  <!-- Title / Label -->
+  <text x="30" y="30" class="mono" font-size="12" fill="#39d353" opacity="0.8" filter="url(#glow-sm)">[ DEEP NEURAL ENGINE ]</text>
+  <line x1="30" y1="40" x2="220" y2="40" stroke="#39d35340"/>
+  <text x="30" y="55" class="mono" font-size="9" fill="#39d353" opacity="0.5">STATUS: FORWARD PASS ACTIVE  |  EPOCHS: 14,024</text>
+
+  <g transform="translate(0, 50)">
+    <!-- Base Edges (L1 to L2) -->
+    <path class="base-edge" d="
+      M 150,80 L 350,50  M 150,80 L 350,110 M 150,80 L 350,170 M 150,80 L 350,230
+      M 150,150 L 350,50 M 150,150 L 350,110 M 150,150 L 350,170 M 150,150 L 350,230
+      M 150,220 L 350,50 M 150,220 L 350,110 M 150,220 L 350,170 M 150,220 L 350,230"/>
+    <!-- Active Edges (L1 to L2) -->
+    <path class="active-edge" style="animation: dash-flow 4s linear infinite;" d="
+      M 150,80 L 350,170 M 150,150 L 350,50 M 150,220 L 350,230 M 150,150 L 350,110"/>
+
+    <!-- Base Edges (L2 to L3) -->
+    <path class="base-edge" d="
+      M 350,50 L 550,50  M 350,50 L 550,110 M 350,50 L 550,170 M 350,50 L 550,230
+      M 350,110 L 550,50 M 350,110 L 550,110 M 350,110 L 550,170 M 350,110 L 550,230
+      M 350,170 L 550,50 M 350,170 L 550,110 M 350,170 L 550,170 M 350,170 L 550,230
+      M 350,230 L 550,50 M 350,230 L 550,110 M 350,230 L 550,170 M 350,230 L 550,230"/>
+    <!-- Active Edges (L2 to L3) -->
+    <path class="active-edge" style="animation: dash-flow 4s linear 1.4s infinite;" d="
+      M 350,50 L 550,110 M 350,110 L 550,230 M 350,170 L 550,170 M 350,230 L 550,50"/>
+
+    <!-- Base Edges (L3 to L4) -->
+    <path class="base-edge" d="
+      M 550,50 L 700,110  M 550,50 L 700,190
+      M 550,110 L 700,110 M 550,110 L 700,190
+      M 550,170 L 700,110 M 550,170 L 700,190
+      M 550,230 L 700,110 M 550,230 L 700,190"/>
+    <!-- Active Edges (L3 to L4) -->
+    <path class="active-edge" style="animation: dash-flow 4s linear 2.8s infinite;" d="
+      M 550,110 L 700,110 M 550,170 L 700,190 M 550,50 L 700,110 M 550,230 L 700,190"/>
+
+    <!-- Nodes L1 (Input) -->
+    <circle cx="150" cy="80" class="node" style="animation: node-pulse-1 4s infinite -0.4s;"/>
+    <circle cx="150" cy="150" class="node" style="animation: node-pulse-1 4s infinite 0s;"/>
+    <circle cx="150" cy="220" class="node" style="animation: node-pulse-1 4s infinite 0.2s;"/>
+
+    <!-- Nodes L2 (Hidden 1) -->
+    <circle cx="350" cy="50" class="node" style="animation: node-pulse-2 4s infinite -0.1s;"/>
+    <circle cx="350" cy="110" class="node" style="animation: node-pulse-2 4s infinite 0s;"/>
+    <circle cx="350" cy="170" class="node" style="animation: node-pulse-2 4s infinite -0.3s;"/>
+    <circle cx="350" cy="230" class="node" style="animation: node-pulse-2 4s infinite 0.2s;"/>
+
+    <!-- Nodes L3 (Hidden 2) -->
+    <circle cx="550" cy="50" class="node" style="animation: node-pulse-3 4s infinite -0.4s;"/>
+    <circle cx="550" cy="110" class="node" style="animation: node-pulse-3 4s infinite -0.1s;"/>
+    <circle cx="550" cy="170" class="node" style="animation: node-pulse-3 4s infinite 0.2s;"/>
+    <circle cx="550" cy="230" class="node" style="animation: node-pulse-3 4s infinite -0.2s;"/>
+
+    <!-- Nodes L4 (Output) -->
+    <circle cx="700" cy="110" class="node" style="animation: node-pulse-3 4s infinite 1.2s; fill: #39d353; filter: url(#glow); stroke: #ffffff;"/>
+    <circle cx="700" cy="190" class="node" style="animation: node-pulse-3 4s infinite 1.4s; fill: #39d353; filter: url(#glow); stroke: #ffffff;"/>
+
+    <!-- Labels -->
+    <g class="mono" font-size="10" fill="#39d353" opacity="0.6">
+      <text x="150" y="260" text-anchor="middle">L1_INPUT</text>
+      <text x="350" y="270" text-anchor="middle">L2_HIDDEN</text>
+      <text x="550" y="270" text-anchor="middle">L3_HIDDEN</text>
+      <text x="700" y="230" text-anchor="middle">L4_OUTPUT</text>
+    </g>
+
+    <g class="mono" font-size="8" fill="#39d353" opacity="0.3">
+      <text x="150" y="275" text-anchor="middle">[768 DIM]</text>
+      <text x="350" y="285" text-anchor="middle">[512 DIM]</text>
+      <text x="550" y="285" text-anchor="middle">[256 DIM]</text>
+      <text x="700" y="245" text-anchor="middle">[ SOFTMAX ]</text>
+    </g>
+  </g>
+
+  <!-- Sweeping scan block -->
+  <rect x="0" y="0" width="100" height="400" fill="url(#scan-grad)" style="animation: scan-v 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;"/>
+
+  <!-- Right Side Stat Blocks -->
+  <g class="mono" font-size="9" fill="#39d353" opacity="0.8">
+    <text x="700" y="30">MODEL:</text>
+    <text x="790" y="30" fill="#fff" text-anchor="end" filter="url(#glow-sm)">PANDORA-7B</text>
+    
+    <text x="700" y="50">LOSS:</text>
+    <text x="790" y="50" text-anchor="end">0.0143</text>
+    
+    <text x="700" y="70">OPTIM:</text>
+    <text x="790" y="70" text-anchor="end">ADAMW</text>
+  </g>
+
+  <!-- Corner Brackets -->
+  <g stroke="#39d353" fill="none" stroke-width="2" opacity="0.6">
+    <polyline points="15,385 15,355 45,355" transform="rotate(180 30 370)"/>
+    <polyline points="755,385 785,385 785,355"/>
+  </g>
+</svg>

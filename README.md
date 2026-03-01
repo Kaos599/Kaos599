@@ -1,195 +1,141 @@
-<br clear="both">
-
-<h1 align="left">Hi 👋! I'm Harsh Dayal (Kaos).</h1>
-
-###
-
-<h3 align="left">A Tech Undergrad, Eternally curious with a thirst for knowledge, Sharpening my skills to make the world a better place. Making products that feels aesthetic, easy to use and carry an objective to solve something important.💻</h3>
-
-###
-
-<br clear="both">
-
 <div align="center">
-  <img height="200" src="https://media.tenor.com/xEFoZaAo2dMAAAAi/club-penguin-dance.gif"  />
-</div>
-
-###
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kaos599&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=chartreuse-dark&locale=en&hide_border=false" height="150" alt="stats graph"  />
-  <img src="https://streak-stats.demolab.com?user=kaos599&locale=en&mode=weekly&theme=chartreuse-dark&hide_border=false&border_radius=5" height="150" alt="streak graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=kaos599&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=chartreuse-dark&hide_border=false" height="150" alt="languages graph"  />
-</div>
-
-###
-
-
-<div align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=kaos599.kaos599&right_color=darkviolet&left_text=Profile%20Views"  />
-</div>
-
-
-
-###
-
-<br clear="both">
-
-<img src="https://raw.githubusercontent.com/kaos599/kaos599/output/snake.svg" alt="Snake animation" />
-
-###
-
-###
-
-<div align="center">
-  <a href="https://www.linkedin.com/in/harshdayal/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
+  <img src="hero-banner.svg" alt="Harsh Dayal - Kaos599" width="100%">
+  <br/>
+  
+  <a href="https://linkedin.com/in/harshdayal599">
+    <img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=39d353&borderColor=30363d" alt="LinkedIn" />
   </a>
-  <a href="mr0x4ww6@anonaddy.me" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
+  <a href="https://x.com/HarshDayal5">
+    <img src="https://img.shields.io/badge/Twitter-0d1117?style=for-the-badge&logo=x&logoColor=39d353&borderColor=30363d" alt="Twitter" />
   </a>
-  <a href="Kaos599" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="discord logo"  />
+  <a href="mailto:harshdayal599@gmail.com">
+    <img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=39d353&borderColor=30363d" alt="Email" />
   </a>
-  <a href="Kaos.27" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Signal&logo=signal&label=&color=039BE5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="signal logo"  />
-  </a>
-  <a href="Kaos599" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=TryHackMe&logo=tryhackme&label=&color=88cc14&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="tryhackme logo"  />
-  </a>
-  <a href="linktr.ee/hd13" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Linktree&logo=linktree&label=&color=1de9b6&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linktree logo"  />
+  <a href="https://harshdayal.framer.website/">
+    <img src="https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&logo=framer&logoColor=39d353&borderColor=30363d" alt="Portfolio" />
   </a>
 </div>
 
-###
-
-<h2 align="center">Skills:-</h2>
-
-###
-
-<h4 align="center">Platform:</h4>
-
-###
-
-<br clear="both">
+<br/>
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="30" alt="vscode logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" height="30" alt="jupyter logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" height="30" alt="googlecloud logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" alt="git logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="30" alt="github logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="30" alt="docker logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firefox/firefox-original.svg" height="30" alt="firefox logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="30" alt="linux logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" height="30" alt="android logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" height="30" alt="anaconda logo"  />
-  <img width="12" />
-  <img src="https://github.com/raycast/extensions/blob/main/extensions/vmware-vcenter/assets/icons/os/windows.png?raw=true" height="30" alt="windows8 logo"  />
-  <img width="12" />
-  <img src="https://cdn.simpleicons.org/wordpress/21759B" height="30" alt="wordpress logo"  />
+  <!-- Cybernetic ASCII Core -->
+  <img src="vitruvian-kaos.svg" alt="Kaos Cybernetic Core" width="100%">
 </div>
 
-###
-
-<h4 align="center">Programming Languages:</h4>
-
-###
-
-<br clear="both">
+<br/>
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="30" alt="c logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="30" alt="cplusplus logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30" alt="java logo"  />
-  <img width="12" />
+  <!-- Interactive Terminal & Easter Egg -->
+  <img src="about-agentic.svg" alt="Kaos AI Terminal" width="800">
 </div>
 
-###
+---
 
-<h4 align="center">Machine Learning:</h4>
-
-###
-
-<br clear="both">
+### 💻 System Telemetry
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="30" alt="tensorflow logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="30" alt="pytorch logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="30" alt="numpy logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="30" alt="pandas logo"  />
-  <img width="12" />
-  <img src="https://cdn.simpleicons.org/opencv/5C3EE8" height="30" alt="opencv logo"  />
+  <table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center">
+        <a href="https://github.com/Kaos599">
+          <img src="https://streak-stats.demolab.com?user=Kaos599&theme=chartreuse-dark&hide_border=true&border_radius=4" alt="GitHub Streak" width="380" />
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/Kaos599">
+          <img src="https://github-readme-stats.vercel.app/api?username=Kaos599&show_icons=true&theme=chartreuse-dark&hide_border=true&border_radius=4" alt="GitHub Stats" width="380" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <br/>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kaos599&layout=compact&theme=chartreuse-dark&hide_border=true&border_radius=4" alt="Top Languages" width="380" />
+      </td>
+    </tr>
+  </table>
 </div>
 
-###
-
-<h4 align="center">Tools:</h4>
-
-###
-
-<br clear="both">
+---
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" height="30" alt="androidstudio logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" height="30" alt="matlab logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" height="30" alt="firebase logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="30" alt="mysql logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" height="30" alt="sqlite logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" height="30" alt="sqlalchemy logo"  />
+  <img src="neural-network.svg" alt="Kaos Neural Processing" width="800">
 </div>
 
-###
+---
 
-<h4 align="center">Graphics & Design:</h4>
+### 🧠 My Core Stack
 
-###
+| Technology | What I do with it |
+| :--- | :--- |
+| **Python** | If Python were a language, I'd speak it better than English. |
+| **TensorFlow & PyTorch** | The keys to unlocking my RTX 3060. |
+| **LangChain & LangGraph** | Giving LLMs a mind of their own. Agentic workflows run my life. |
+| **ChromaDB & Qdrant** | Remembering everything an LLM forgets (which is a lot). |
+| **FastAPI** | Fast, robust, and straight to the point. The only backend I need. |
+| **Docker** | Because "It works on my machine" is not an excuse. |
+| **Next.js & React** | For when I inevitably have to build a frontend to show off the backend. |
+| **Shadcn UI & Tailwind** | Making things look good without wanting to pull my hair out. |
 
-<br clear="both">
+---
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/behance/behance-original.svg" height="30" alt="behance logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" height="30" alt="canva logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="30" alt="figma logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg" height="30" alt="webflow logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qt/qt-original.svg" height="30" alt="qt logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" height="30" alt="illustrator logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-plain.svg" height="30" alt="premierepro logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" height="30" alt="photoshop logo"  />
+  <img src="agent-swarm.svg" alt="Kaos Agent Swarm Architecture" width="800">
 </div>
 
-###
+---
 
-<p align="center">
-    <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote"/>
-</p>
+### 🚀 Agentic Systems & Projects
 
+<div align="center">
+  <a href="https://github.com/Kaos599/Cascade">
+    <img src="card-cascade.svg" alt="Cascade" width="800">
+  </a>
+  <br/>
+  <a href="https://github.com/Kaos599/Faraday">
+    <img src="card-faraday.svg" alt="Faraday" width="800">
+  </a>
+  <br/>
+  <a href="https://github.com/Kaos599/LegalSphere">
+    <img src="card-legalsphere.svg" alt="LegalSphere" width="800">
+  </a>
+  <br/>
+  <a href="https://github.com/Kaos599/Sprout">
+    <img src="card-sprout.svg" alt="Sprout" width="800">
+  </a>
+  <br/>
+  <a href="https://github.com/Kaos599/Apollo">
+    <img src="card-apollo.svg" alt="Apollo" width="800">
+  </a>
+  <br/>
+  <a href="https://github.com/Kaos599/Numerate">
+    <img src="card-numerate.svg" alt="Numerate" width="800">
+  </a>
+</div>
+
+---
+
+### 📜 Certifications & Achievements
+
+* **🏆 Winner:** Google GenAI Exchange Hackathon (For Project Cascade)
+* **🏆 Top 5 Team:** Build with AI Hackathon (TCS + Google)
+* **🏆 Internal Rounds Finalist:** Smart India Hackathon (SIH)
+* **Algorithm Specialization** - *Stanford University*
+* **Cloud Computing Specialization** - *UIUC*
+* **Cybersecurity Fundamentals** - *IBM*
+* **GitHub Foundation Certification** - *GitHub*
+
+---
+
+### 🛠️ Services I Offer
+
+* **Model Creation & Fine-tuning**: Crafting custom AI solutions that don't just "talk" but actually solve hyper-specific domain problems.
+* **Agentic Workflows**: Building LLM swarms (using LangGraph/LangChain) that autonomously gather data, reason, and execute tasks. 
+* **Data Scraping & Synthetic Generation**: Building reliable pipelines for chaotic web data and generating robust synthetic datasets for ML training.
+
+<br/>
+
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Courier+New&color=39d353&size=16&center=true&vCenter=true&width=600&height=40&lines=Structured+Kaos+System+Online;Waiting+for+next+input...;END_OF_TRANSMISSION" alt="Typing SVG" />
+</div>

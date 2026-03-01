@@ -1,0 +1,193 @@
+<svg width="800" height="520" viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes spin-cw { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      @keyframes spin-ccw { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+      @keyframes pulse-ring {
+        0%, 100% { opacity: 0.2; r: 190px; stroke-width: 0.5; }
+        50% { opacity: 0.6; r: 195px; stroke-width: 1.5; }
+      }
+      @keyframes node-pulse {
+        0%, 100% { r: 3px; opacity: 0.4; }
+        50% { r: 6px; opacity: 1; filter: drop-shadow(0 0 4px #39d353); }
+      }
+      @keyframes matrix-fall {
+        0% { transform: translateY(-520px); opacity: 0; }
+        5% { opacity: 0.8; }
+        95% { opacity: 0.8; }
+        100% { transform: translateY(520px); opacity: 0; }
+      }
+      @keyframes core-breathe {
+        0%, 100% { filter: drop-shadow(0 0 10px #39d353) drop-shadow(0 0 20px #39d35340); }
+        50% { filter: drop-shadow(0 0 20px #39d353) drop-shadow(0 0 40px #39d35360) drop-shadow(0 0 80px #39d35320); }
+      }
+      @keyframes scan-h {
+        0% { transform: translateX(-800px); }
+        100% { transform: translateX(800px); }
+      }
+      @keyframes scan-v {
+        0% { transform: translateY(-520px); }
+        100% { transform: translateY(520px); }
+      }
+      @keyframes blink { 0%, 96%, 100% { opacity: 1; } 98% { opacity: 0; } }
+      .mono { font-family: 'Courier New', monospace; }
+      .ring-outer { animation: spin-cw 25s linear infinite; transform-origin: 400px 260px; }
+      .ring-mid { animation: spin-ccw 18s linear infinite; transform-origin: 400px 260px; }
+      .ring-inner { animation: spin-cw 12s linear infinite; transform-origin: 400px 260px; }
+      .ring-micro { animation: spin-ccw 6s linear infinite; transform-origin: 400px 260px; }
+      .core-group { animation: core-breathe 4s ease-in-out infinite; }
+    </style>
+
+    <filter id="glow-sm"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow-md"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050708"/>
+      <stop offset="100%" style="stop-color:#0b110b"/>
+    </linearGradient>
+    <radialGradient id="core-glow" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#39d35315"/>
+      <stop offset="50%" style="stop-color:#39d35305"/>
+      <stop offset="100%" style="stop-color:#39d35300"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" fill="url(#bg)"/>
+
+  <!-- Scanning beams -->
+  <rect x="0" y="260" width="800" height="1" fill="#39d353" opacity="0.08" style="animation: scan-v 6s linear infinite;"/>
+  <rect x="400" y="0" width="1" height="520" fill="#39d353" opacity="0.08" style="animation: scan-h 8s linear infinite;"/>
+
+  <!-- Matrix rain columns -->
+  <g opacity="0.15" class="mono" font-size="11" fill="#39d353">
+    <text x="24" y="0" style="animation: matrix-fall 3.2s linear 0s infinite;">1<tspan x="24" dy="14">0</tspan><tspan x="24" dy="14">1</tspan><tspan x="24" dy="14">1</tspan><tspan x="24" dy="14">0</tspan><tspan x="24" dy="14">1</tspan></text>
+    <text x="48" y="0" style="animation: matrix-fall 4.5s linear 1.2s infinite;">0<tspan x="48" dy="14">1</tspan><tspan x="48" dy="14">0</tspan><tspan x="48" dy="14">0</tspan></text>
+    <text x="72" y="0" style="animation: matrix-fall 3.8s linear 0.7s infinite;">1<tspan x="72" dy="14">1</tspan><tspan x="72" dy="14">0</tspan><tspan x="72" dy="14">1</tspan><tspan x="72" dy="14">0</tspan></text>
+    
+    <text x="728" y="0" style="animation: matrix-fall 3.9s linear 0.4s infinite;">0<tspan x="728" dy="14">1</tspan><tspan x="728" dy="14">1</tspan><tspan x="728" dy="14">0</tspan><tspan x="728" dy="14">1</tspan></text>
+    <text x="752" y="0" style="animation: matrix-fall 5.1s linear 2.1s infinite;">1<tspan x="752" dy="14">0</tspan><tspan x="752" dy="14">1</tspan><tspan x="752" dy="14">0</tspan></text>
+    <text x="776" y="0" style="animation: matrix-fall 3.4s linear 1.5s infinite;">0<tspan x="776" dy="14">0</tspan><tspan x="776" dy="14">1</tspan><tspan x="776" dy="14">1</tspan></text>
+  </g>
+
+  <!-- Central Core Ambient Glow -->
+  <circle cx="400" cy="260" r="220" fill="url(#core-glow)"/>
+
+  <!-- Static cross hairs -->
+  <g opacity="0.2" stroke="#39d353" stroke-width="0.5" stroke-dasharray="2 6">
+    <line x1="400" y1="40" x2="400" y2="480"/>
+    <line x1="180" y1="260" x2="620" y2="260"/>
+  </g>
+
+  <!-- === SPINNING RINGS === -->
+  <!-- Outer pulse ring -->
+  <circle cx="400" cy="260" r="190" fill="none" stroke="#39d353" style="animation: pulse-ring 4s ease-in-out infinite;"/>
+
+  <g class="ring-outer">
+    <circle cx="400" cy="260" r="210" fill="none" stroke="#39d353" stroke-width="1" stroke-dasharray="10 20" opacity="0.4"/>
+    <circle cx="400" cy="50" r="4" fill="#39d353" style="animation: node-pulse 3s infinite 0.1s;"/>
+    <circle cx="610" cy="260" r="4" fill="#39d353" style="animation: node-pulse 3s infinite 0.8s;"/>
+    <circle cx="400" cy="470" r="4" fill="#39d353" style="animation: node-pulse 3s infinite 1.5s;"/>
+    <circle cx="190" cy="260" r="4" fill="#39d353" style="animation: node-pulse 3s infinite 2.2s;"/>
+  </g>
+
+  <g class="ring-mid">
+    <circle cx="400" cy="260" r="165" fill="none" stroke="#39d353" stroke-width="1.5" stroke-dasharray="2 8 8 16" opacity="0.6"/>
+    <!-- Circuit blocks attached to mid ring -->
+    <rect x="396" y="90" width="8" height="10" fill="#39d353" opacity="0.8"/>
+    <rect x="396" y="420" width="8" height="10" fill="#39d353" opacity="0.8"/>
+    <rect x="230" y="256" width="10" height="8" fill="#39d353" opacity="0.8"/>
+    <rect x="560" y="256" width="10" height="8" fill="#39d353" opacity="0.8"/>
+  </g>
+
+  <g class="ring-inner">
+    <circle cx="400" cy="260" r="120" fill="none" stroke="#39d353" stroke-width="2" stroke-dasharray="30 15 5 15" opacity="0.7"/>
+    <line x1="400" y1="260" x2="400" y2="140" stroke="#39d353" stroke-width="2" opacity="0.4"/>
+    <circle cx="400" cy="140" r="4" fill="#39d353" filter="url(#glow-sm)"/>
+  </g>
+
+  <g class="ring-micro">
+    <circle cx="400" cy="260" r="80" fill="none" stroke="#39d353" stroke-width="2.5" stroke-dasharray="4 6" opacity="0.5"/>
+  </g>
+
+  <!-- === ASCII BRAIN CORE === -->
+  <g class="core-group">
+    <g filter="url(#glow-md)" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#39d353" text-anchor="middle">
+      <text x="400" y="180">   .-~~~-.   </text>
+      <text x="400" y="196">  (  o   o  )</text>
+      <text x="400" y="212">  | .-. .-. |</text>
+      <text x="400" y="228">  |( v )( v )|</text>
+      <text x="400" y="244">  | '-' '-' |</text>
+      <text x="400" y="260">   \       / </text>
+      <text x="400" y="276">    '-----'  </text>
+      <text x="400" y="292">    ||   ||  </text>
+      <text x="400" y="308">   [_]   [_] </text>
+    </g>
+
+    <rect x="310" y="324" width="180" height="28" rx="2" fill="#0d1117" stroke="#39d353" stroke-width="1.5" opacity="0.95"/>
+    <rect x="310" y="324" width="180" height="28" rx="2" fill="#39d353" opacity="0.1"/>
+    <text x="400" y="343" class="mono" font-size="12" fill="#39d353" text-anchor="middle" font-weight="bold" filter="url(#glow-sm)">[ KAOS AGENT CORE ]</text>
+  </g>
+
+  <!-- === SIDE DATA PANELS === -->
+  <g class="mono" font-size="10" fill="#39d353" opacity="0.8">
+    <!-- Left panel -->
+    <text x="70" y="180">RUNTIME:</text>
+    <text x="70" y="196" fill="#fff" filter="url(#glow-sm)">LANGRAPH</text>
+    <line x1="70" y1="202" x2="160" y2="202" stroke="#39d353" stroke-width="1" opacity="0.4"/>
+    
+    <text x="70" y="220">STATE:</text>
+    <text x="70" y="236">CONSCIOUS</text>
+    <line x1="70" y1="242" x2="160" y2="242" stroke="#39d353" stroke-width="1" opacity="0.4"/>
+    
+    <text x="70" y="260">VECTORS:</text>
+    <text x="70" y="276">CHROMADB</text>
+    <line x1="70" y1="282" x2="160" y2="282" stroke="#39d353" stroke-width="1" opacity="0.4"/>
+
+    <text x="70" y="300">MEMORY:</text>
+    <text x="70" y="316">8192 TOK</text>
+    <line x1="70" y1="322" x2="160" y2="322" stroke="#39d353" stroke-width="1" opacity="0.4"/>
+    
+    <text x="70" y="340">COMPUTE:</text>
+    <text x="70" y="356">RTX 3060</text>
+
+    <!-- Right panel -->
+    <g text-anchor="end">
+      <text x="730" y="180">LLM_CORE:</text>
+      <text x="730" y="196" fill="#fff" filter="url(#glow-sm)">GEMINI_1.5</text>
+      <line x1="640" y1="202" x2="730" y2="202" stroke="#39d353" stroke-width="1" opacity="0.4"/>
+      
+      <text x="730" y="220">API_GATE:</text>
+      <text x="730" y="236">FASTAPI</text>
+      <line x1="640" y1="242" x2="730" y2="242" stroke="#39d353" stroke-width="1" opacity="0.4"/>
+      
+      <text x="730" y="260">DB_CACHE:</text>
+      <text x="730" y="276">QDRANT</text>
+      <line x1="640" y1="282" x2="730" y2="282" stroke="#39d353" stroke-width="1" opacity="0.4"/>
+
+      <text x="730" y="300">CONTAINER:</text>
+      <text x="730" y="316">DOCKER</text>
+      <line x1="640" y1="322" x2="730" y2="322" stroke="#39d353" stroke-width="1" opacity="0.4"/>
+      
+      <text x="730" y="340">INTERFACE:</text>
+      <text x="730" y="356">NEXT.JS</text>
+    </g>
+  </g>
+
+  <!-- Connectors to core -->
+  <path d="M 165,242 L 180,242 L 195,260 L 220,260" fill="none" stroke="#39d353" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.5"/>
+  <path d="M 635,242 L 620,242 L 605,260 L 580,260" fill="none" stroke="#39d353" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.5"/>
+
+  <!-- === CORNER FRAMES === -->
+  <g stroke="#39d353" fill="none" stroke-width="2" opacity="0.7">
+    <polyline points="15,45 15,15 45,15"/>
+    <polyline points="755,15 785,15 785,45"/>
+    <polyline points="15,475 15,505 45,505"/>
+    <polyline points="755,505 785,505 785,475"/>
+  </g>
+
+  <!-- Bottom target coordinates -->
+  <text x="400" y="500" class="mono" font-size="9" fill="#39d353" opacity="0.5" text-anchor="middle" letter-spacing="4" style="animation: blink 8s infinite;">
+    SYS: KAOS599  ·  LAT: 34.0522°N  LON: 118.2437°W  ·  AUTH: OMEGA
+  </text>
+</svg>

@@ -1,0 +1,172 @@
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes bar-grow-1 { 0%, 10% { width: 0; } 40%, 100% { width: 88%; } }
+      @keyframes bar-grow-2 { 0%, 15% { width: 0; } 45%, 100% { width: 95%; } }
+      @keyframes bar-grow-3 { 0%, 20% { width: 0; } 50%, 100% { width: 80%; } }
+      @keyframes bar-grow-4 { 0%, 25% { width: 0; } 55%, 100% { width: 75%; } }
+      @keyframes bar-grow-5 { 0%, 30% { width: 0; } 60%, 100% { width: 70%; } }
+      @keyframes bar-grow-6 { 0%, 35% { width: 0; } 65%, 100% { width: 65%; } }
+      @keyframes bar-grow-7 { 0%, 40% { width: 0; } 70%, 100% { width: 60%; } }
+      @keyframes fade-in-label { 0%, 10% { opacity: 0; } 30%, 100% { opacity: 1; } }
+      @keyframes spin-radar { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      @keyframes pulse-ring-r { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.8; } }
+      @keyframes border-trace-s { 0% { stroke-dashoffset: 2200; } 100% { stroke-dashoffset: 0; } }
+      @keyframes scanner-sweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes node-pop {
+        0%, 80% { r: 4; opacity: 0.5; }
+        85% { r: 7; opacity: 1; }
+        90% { r: 4; opacity: 0.5; }
+        95% { r: 6; opacity: 0.9; }
+        100% { r: 4; opacity: 0.5; }
+      }
+      .mono { font-family: 'Courier New', monospace; }
+      .bar-label { font-family: 'Courier New', monospace; font-size: 10px; fill: #8b949e; }
+      .bar-val { font-family: 'Courier New', monospace; font-size: 10px; fill: #39d353; }
+      .border-s { stroke-dasharray: 2200; animation: border-trace-s 2s ease-out both; }
+    </style>
+    <filter id="glow-s">
+      <feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-sm-s">
+      <feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="bg-s" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/><stop offset="100%" style="stop-color:#0a0f0a"/>
+    </linearGradient>
+    <linearGradient id="bar-grad-g" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#39d353"/><stop offset="100%" style="stop-color:#22c55e;stop-opacity:0.6"/>
+    </linearGradient>
+    <linearGradient id="bar-grad-b" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff"/><stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.6"/>
+    </linearGradient>
+    <linearGradient id="bar-grad-p" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a855f7"/><stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0.6"/>
+    </linearGradient>
+    <clipPath id="bar-clip-1"><rect x="0" y="0" height="16" style="animation: bar-grow-1 8s ease-out infinite; width: 88%;"/></clipPath>
+    <clipPath id="bar-clip-2"><rect x="0" y="0" height="16" style="animation: bar-grow-2 8s ease-out infinite; width: 95%;"/></clipPath>
+    <clipPath id="bar-clip-3"><rect x="0" y="0" height="16" style="animation: bar-grow-3 8s ease-out infinite; width: 80%;"/></clipPath>
+    <clipPath id="bar-clip-4"><rect x="0" y="0" height="16" style="animation: bar-grow-4 8s ease-out infinite; width: 75%;"/></clipPath>
+    <clipPath id="bar-clip-5"><rect x="0" y="0" height="16" style="animation: bar-grow-5 8s ease-out infinite; width: 70%;"/></clipPath>
+    <clipPath id="bar-clip-6"><rect x="0" y="0" height="16" style="animation: bar-grow-6 8s ease-out infinite; width: 65%;"/></clipPath>
+    <clipPath id="bar-clip-7"><rect x="0" y="0" height="16" style="animation: bar-grow-7 8s ease-out infinite; width: 60%;"/></clipPath>
+    <radialGradient id="radar-sweep-grad" cx="0%" cy="50%">
+      <stop offset="0%" style="stop-color:#39d353;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#39d353;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="300" fill="url(#bg-s)"/>
+  <rect x="1" y="1" width="798" height="298" rx="3" fill="none" stroke="#39d35330" stroke-width="1" class="border-s"/>
+
+  <!-- Corner marks -->
+  <g stroke="#39d353" fill="none" stroke-width="1.5" opacity="0.5">
+    <polyline points="10,30 10,10 30,10"/><polyline points="770,10 790,10 790,30"/>
+    <polyline points="10,270 10,290 30,290"/><polyline points="770,290 790,290 790,270"/>
+  </g>
+
+  <!-- LEFT HALF: Skill Bars -->
+  <text x="30" y="35" class="mono" font-size="10" fill="#39d353" letter-spacing="3" opacity="0.8">SKILL_MATRIX</text>
+  <line x1="30" y1="42" x2="370" y2="42" stroke="#39d35320" stroke-width="1"/>
+
+  <!-- Divider -->
+  <line x1="400" y1="20" x2="400" y2="280" stroke="#39d35318" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- Bars -->
+  <g transform="translate(30, 55)">
+    <!-- Python -->
+    <text y="13" class="bar-label">PYTHON</text>
+    <rect x="110" y="1" width="220" height="14" rx="1" fill="#39d35308"/>
+    <rect x="110" y="1" width="193" height="14" rx="1" fill="url(#bar-grad-g)" opacity="0.9" clip-path="url(#bar-clip-1)" style="animation: bar-grow-1 6s ease-out 0.2s both;"/>
+    <text x="338" y="13" class="bar-val">88%</text>
+
+    <!-- LangGraph -->
+    <text y="43" class="bar-label">LANGGRAPH</text>
+    <rect x="110" y="31" width="220" height="14" rx="1" fill="#39d35308"/>
+    <rect x="110" y="31" width="209" height="14" rx="1" fill="url(#bar-grad-g)" opacity="0.9" style="animation: bar-grow-2 6s ease-out 0.4s both; width: 0;"/>
+    <text x="338" y="43" class="bar-val">95%</text>
+
+    <!-- PyTorch -->
+    <text y="73" class="bar-label">PYTORCH</text>
+    <rect x="110" y="61" width="220" height="14" rx="1" fill="#58a6ff08"/>
+    <rect x="110" y="61" width="176" height="14" rx="1" fill="url(#bar-grad-b)" opacity="0.9" style="animation: bar-grow-3 6s ease-out 0.6s both; width: 0;"/>
+    <text x="338" y="73" class="bar-val" fill="#58a6ff">80%</text>
+
+    <!-- FastAPI -->
+    <text y="103" class="bar-label">FASTAPI</text>
+    <rect x="110" y="91" width="220" height="14" rx="1" fill="#39d35308"/>
+    <rect x="110" y="91" width="165" height="14" rx="1" fill="url(#bar-grad-g)" opacity="0.9" style="animation: bar-grow-4 6s ease-out 0.8s both; width: 0;"/>
+    <text x="338" y="103" class="bar-val">75%</text>
+
+    <!-- Next.js -->
+    <text y="133" class="bar-label">NEXT.JS</text>
+    <rect x="110" y="121" width="220" height="14" rx="1" fill="#58a6ff08"/>
+    <rect x="110" y="121" width="154" height="14" rx="1" fill="url(#bar-grad-b)" opacity="0.9" style="animation: bar-grow-5 6s ease-out 1.0s both; width: 0;"/>
+    <text x="338" y="133" class="bar-val" fill="#58a6ff">70%</text>
+
+    <!-- Docker -->
+    <text y="163" class="bar-label">DOCKER</text>
+    <rect x="110" y="151" width="220" height="14" rx="1" fill="#a855f708"/>
+    <rect x="110" y="151" width="143" height="14" rx="1" fill="url(#bar-grad-p)" opacity="0.9" style="animation: bar-grow-6 6s ease-out 1.2s both; width: 0;"/>
+    <text x="338" y="163" class="bar-val" fill="#a855f7">65%</text>
+
+    <!-- ChromaDB -->
+    <text y="193" class="bar-label">CHROMADB</text>
+    <rect x="110" y="181" width="220" height="14" rx="1" fill="#a855f708"/>
+    <rect x="110" y="181" width="132" height="14" rx="1" fill="url(#bar-grad-p)" opacity="0.9" style="animation: bar-grow-7 6s ease-out 1.4s both; width: 0;"/>
+    <text x="338" y="193" class="bar-val" fill="#a855f7">60%</text>
+  </g>
+
+  <!-- RIGHT HALF: Radar/Stats -->
+  <text x="428" y="35" class="mono" font-size="10" fill="#39d353" letter-spacing="3" opacity="0.8">SYSTEM_VITALS</text>
+  <line x1="428" y1="42" x2="770" y2="42" stroke="#39d35320" stroke-width="1"/>
+
+  <!-- Radar chart centered at 600, 175 -->
+  <g transform="translate(600, 175)">
+    <!-- Radar rings -->
+    <polygon points="0,-100 86.6,-50 86.6,50 0,100 -86.6,50 -86.6,-50" fill="none" stroke="#39d35318" stroke-width="1"/>
+    <polygon points="0,-70 60.6,-35 60.6,35 0,70 -60.6,35 -60.6,-35" fill="none" stroke="#39d35118" stroke-width="1"/>
+    <polygon points="0,-40 34.6,-20 34.6,20 0,40 -34.6,20 -34.6,-20" fill="none" stroke="#39d35112" stroke-width="1"/>
+
+    <!-- Axes -->
+    <g stroke="#39d35120" stroke-width="0.5">
+      <line x1="0" y1="-100" x2="0" y2="100"/>
+      <line x1="86.6" y1="-50" x2="-86.6" y2="50"/>
+      <line x1="86.6" y1="50" x2="-86.6" y2="-50"/>
+    </g>
+
+    <!-- Sweeping scanner line -->
+    <line x1="0" y1="0" x2="0" y2="-100" stroke="#39d353" stroke-width="1.5" opacity="0.5" style="transform-origin: 0 0; animation: scanner-sweep 4s linear infinite;"/>
+    <!-- Sweep fill sector -->
+    <path d="M 0 0 L 0 -100 A 100 100 0 0 1 86.6 -50 Z" fill="url(#radar-sweep-grad)" style="transform-origin: 0 0; animation: scanner-sweep 4s linear infinite; opacity: 0.4;"/>
+
+    <!-- Data polygon -->
+    <polygon points="0,-88 77,-38 72,42 0,82 -65,38 -72,-40"
+      fill="#39d35318" stroke="#39d353" stroke-width="1.5" opacity="0.8" filter="url(#glow-sm-s)"/>
+
+    <!-- Nodes at vertices -->
+    <circle cx="0" cy="-88" r="4" fill="#39d353" style="animation: node-pop 4s ease-in-out 0s infinite;"/>
+    <circle cx="77" cy="-38" r="4" fill="#39d353" style="animation: node-pop 4s ease-in-out 0.4s infinite;"/>
+    <circle cx="72" cy="42" r="4" fill="#39d353" style="animation: node-pop 4s ease-in-out 0.8s infinite;"/>
+    <circle cx="0" cy="82" r="4" fill="#39d353" style="animation: node-pop 4s ease-in-out 1.2s infinite;"/>
+    <circle cx="-65" cy="38" r="4" fill="#39d353" style="animation: node-pop 4s ease-in-out 1.6s infinite;"/>
+    <circle cx="-72" cy="-40" r="4" fill="#39d353" style="animation: node-pop 4s ease-in-out 2.0s infinite;"/>
+
+    <!-- Axis labels -->
+    <text y="-108" class="mono" font-size="8" fill="#39d353" text-anchor="middle">AGENTS</text>
+    <text x="94" y="-44" class="mono" font-size="8" fill="#39d353">BACKEND</text>
+    <text x="80" y="54" class="mono" font-size="8" fill="#39d353">FRONTEND</text>
+    <text y="96" class="mono" font-size="8" fill="#39d353" text-anchor="middle">DATA</text>
+    <text x="-138" y="44" class="mono" font-size="8" fill="#39d353">ML/DL</text>
+    <text x="-136" y="-44" class="mono" font-size="8" fill="#39d353">DEVOPS</text>
+  </g>
+
+  <!-- Bottom status bar -->
+  <rect x="0" y="275" width="800" height="25" fill="#0a0d0a"/>
+  <line x1="0" y1="275" x2="800" y2="275" stroke="#39d35320" stroke-width="1"/>
+  <text x="30" y="291" class="mono" font-size="9" fill="#39d35350" letter-spacing="2">KAOS_STACK v4.2  ·  AGENTIC SYSTEMS ONLINE  ·  ALL MODULES LOADED  ·  STRUCTURED KAOS</text>
+  <circle cx="775" cy="288" r="3" fill="#39d353" opacity="0.8" filter="url(#glow-sm-s)"/>
+</svg>

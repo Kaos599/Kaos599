@@ -1,0 +1,234 @@
+<svg width="800" height="220" viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes scanline {
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(2200%); }
+      }
+      @keyframes glitch1 {
+        0%, 92%, 100% { clip-path: inset(0 0 100% 0); transform: translate(0,0); opacity:0; }
+        93% { clip-path: inset(10% 0 60% 0); transform: translate(-4px, 2px); opacity:1; }
+        94% { clip-path: inset(50% 0 20% 0); transform: translate(4px, -2px); opacity:1; }
+        95% { clip-path: inset(30% 0 40% 0); transform: translate(-2px, 1px); opacity:1; }
+        96%, 99% { clip-path: inset(0 0 100% 0); opacity:0; }
+        97% { clip-path: inset(70% 0 5% 0); transform: translate(3px, -1px); opacity:1; }
+      }
+      @keyframes glitch2 {
+        0%, 94%, 100% { clip-path: inset(0 0 100% 0); transform: translate(0,0); opacity:0; }
+        95% { clip-path: inset(20% 0 50% 0); transform: translate(5px, -2px); opacity:1; color:#39d353; }
+        96% { clip-path: inset(60% 0 10% 0); transform: translate(-5px, 2px); opacity:1; }
+        97%, 100% { clip-path: inset(0 0 100% 0); opacity:0; }
+      }
+      @keyframes flicker {
+        0%, 100% { opacity: 1; }
+        92% { opacity: 1; }
+        93% { opacity: 0.7; }
+        94% { opacity: 1; }
+        96% { opacity: 0.6; }
+        97% { opacity: 1; }
+      }
+      @keyframes pulse-glow {
+        0%, 100% { filter: drop-shadow(0 0 8px #39d353) drop-shadow(0 0 20px #39d35360); }
+        50% { filter: drop-shadow(0 0 15px #39d353) drop-shadow(0 0 40px #39d35380) drop-shadow(0 0 60px #39d35330); }
+      }
+      @keyframes cursor-blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      @keyframes slide-in-left {
+        0% { transform: translateX(-60px); opacity: 0; }
+        100% { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes slide-in-right {
+        0% { transform: translateX(60px); opacity: 0; }
+        100% { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes fade-up {
+        0% { transform: translateY(20px); opacity: 0; }
+        100% { transform: translateY(0); opacity: 1; }
+      }
+      @keyframes border-flow {
+        0% { stroke-dashoffset: 1600; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes corner-pulse {
+        0%, 100% { opacity: 1; stroke-width: 2; }
+        50% { opacity: 0.4; stroke-width: 1; }
+      }
+      @keyframes data-stream {
+        0% { opacity: 0; transform: translateY(0px); }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { opacity: 0; transform: translateY(-180px); }
+      }
+      .main-title {
+        font-family: 'Courier New', monospace;
+        font-size: 52px;
+        font-weight: 900;
+        letter-spacing: 8px;
+        fill: #39d353;
+        animation: flicker 8s infinite;
+      }
+      .glitch-layer-1 {
+        font-family: 'Courier New', monospace;
+        font-size: 52px;
+        font-weight: 900;
+        letter-spacing: 8px;
+        fill: #ff6b6b;
+        animation: glitch1 8s infinite;
+      }
+      .glitch-layer-2 {
+        font-family: 'Courier New', monospace;
+        font-size: 52px;
+        font-weight: 900;
+        letter-spacing: 8px;
+        fill: #39d353;
+        animation: glitch2 8s infinite;
+      }
+      .subtitle {
+        font-family: 'Courier New', monospace;
+        font-size: 13px;
+        fill: #39d35399;
+        letter-spacing: 4px;
+        animation: fade-up 1.2s ease-out 0.8s both;
+      }
+      .tag-text {
+        font-family: 'Courier New', monospace;
+        font-size: 10px;
+        fill: #39d353;
+        letter-spacing: 2px;
+      }
+      .corner-line { animation: corner-pulse 3s ease-in-out infinite; }
+      .border-rect {
+        fill: none;
+        stroke: #39d35340;
+        stroke-width: 1;
+        stroke-dasharray: 1600;
+        animation: border-flow 3s ease-out 0.2s both;
+      }
+      .prompt { fill: #39d353; font-family: 'Courier New', monospace; font-size: 11px; }
+      .cursor { fill: #39d353; animation: cursor-blink 1s step-end infinite; }
+      .stat-label { font-family: 'Courier New', monospace; font-size: 9px; fill: #39d35366; letter-spacing: 2px; }
+      .stat-val { font-family: 'Courier New', monospace; font-size: 11px; fill: #39d353; letter-spacing: 1px; }
+      .left-panel { animation: slide-in-left 0.8s ease-out 0.3s both; }
+      .right-panel { animation: slide-in-right 0.8s ease-out 0.3s both; }
+      .center-panel { animation: fade-up 0.8s ease-out 0.1s both; }
+    </style>
+
+    <!-- Noise texture -->
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-strong">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e0f"/>
+      <stop offset="50%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#0a0f0a"/>
+    </linearGradient>
+    <linearGradient id="green-fade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#39d353;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#39d353;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#39d353;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="side-fade-l" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d1117;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="side-fade-r" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#0d1117;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="220" fill="url(#bg-grad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.06">
+    <line x1="0" y1="55" x2="800" y2="55" stroke="#39d353" stroke-width="0.5"/>
+    <line x1="0" y1="110" x2="800" y2="110" stroke="#39d353" stroke-width="0.5"/>
+    <line x1="0" y1="165" x2="800" y2="165" stroke="#39d353" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="220" stroke="#39d353" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="220" stroke="#39d353" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="220" stroke="#39d353" stroke-width="0.5"/>
+  </g>
+
+  <!-- Scanline overlay -->
+  <rect x="0" y="0" width="800" height="8" fill="url(#green-fade)" opacity="0.06" style="animation: scanline 6s linear infinite;"/>
+
+  <!-- Main border -->
+  <rect x="10" y="10" width="780" height="200" rx="2" class="border-rect"/>
+
+  <!-- Corner decorations TL -->
+  <g class="corner-line" stroke="#39d353" stroke-width="2" fill="none">
+    <line x1="10" y1="30" x2="10" y2="10" /><line x1="10" y1="10" x2="30" y2="10" />
+    <line x1="770" y1="10" x2="790" y2="10" /><line x1="790" y1="10" x2="790" y2="30" />
+    <line x1="10" y1="190" x2="10" y2="210" /><line x1="10" y1="210" x2="30" y2="210" />
+    <line x1="770" y1="210" x2="790" y2="210" /><line x1="790" y1="210" x2="790" y2="190" />
+  </g>
+
+  <!-- Left panel: system info -->
+  <g class="left-panel">
+    <text x="32" y="40" class="stat-label">SYSTEM</text>
+    <text x="32" y="55" class="stat-val">KAOS_599</text>
+    <line x1="32" y1="62" x2="120" y2="62" stroke="#39d35330" stroke-width="1"/>
+    <text x="32" y="78" class="stat-label">STATUS</text>
+    <text x="32" y="93" class="stat-val" fill="#39d353">● ONLINE</text>
+    <line x1="32" y1="100" x2="120" y2="100" stroke="#39d35330" stroke-width="1"/>
+    <text x="32" y="116" class="stat-label">MODE</text>
+    <text x="32" y="131" class="stat-val">AGENTIC</text>
+    <line x1="32" y1="138" x2="120" y2="138" stroke="#39d35330" stroke-width="1"/>
+    <text x="32" y="154" class="stat-label">BUILD</text>
+    <text x="32" y="169" class="stat-val">v4.2.1</text>
+  </g>
+
+  <!-- Center: Main Title -->
+  <g class="center-panel">
+    <g transform="translate(400, 105)">
+      <!-- Glitch layers -->
+      <text class="glitch-layer-1" text-anchor="middle" y="0">HARSH DAYAL</text>
+      <text class="glitch-layer-2" text-anchor="middle" y="0">HARSH DAYAL</text>
+      <!-- Main text -->
+      <text class="main-title" text-anchor="middle" y="0" filter="url(#glow)">HARSH DAYAL</text>
+    </g>
+    <!-- Subtitle line -->
+    <line x1="220" y1="130" x2="360" y2="130" stroke="url(#green-fade)" stroke-width="1"/>
+    <text x="400" y="152" class="subtitle" text-anchor="middle">AI ENGINEER  ·  AGENT ARCHITECT  ·  KAOS599</text>
+    <line x1="440" y1="130" x2="580" y2="130" stroke="url(#green-fade)" stroke-width="1"/>
+
+    <!-- Bottom terminal line -->
+    <text x="400" y="196" class="prompt" text-anchor="middle" opacity="0.5">
+      &gt; awaiting_next_instruction...
+    </text>
+    <rect x="601" y="186" width="7" height="12" class="cursor"/>
+  </g>
+
+  <!-- Right panel: metrics -->
+  <g class="right-panel">
+    <text x="680" y="40" class="stat-label" text-anchor="end">SYNC</text>
+    <text x="680" y="55" class="stat-val" text-anchor="end">99.9%</text>
+    <line x1="680" y1="62" x2="768" y2="62" stroke="#39d35330" stroke-width="1"/>
+    <text x="680" y="78" class="stat-label" text-anchor="end">AGENTS</text>
+    <text x="680" y="93" class="stat-val" text-anchor="end">ACTIVE</text>
+    <line x1="680" y1="100" x2="768" y2="100" stroke="#39d35330" stroke-width="1"/>
+    <text x="680" y="116" class="stat-label" text-anchor="end">STACK</text>
+    <text x="680" y="131" class="stat-val" text-anchor="end">PY·TS·RS</text>
+    <line x1="680" y1="138" x2="768" y2="138" stroke="#39d35330" stroke-width="1"/>
+    <text x="680" y="154" class="stat-label" text-anchor="end">AUTH</text>
+    <text x="680" y="169" class="stat-val" text-anchor="end">PROMETHEUS</text>
+  </g>
+
+  <!-- Side vignettes -->
+  <rect x="0" y="0" width="120" height="220" fill="url(#side-fade-l)"/>
+  <rect x="680" y="0" width="120" height="220" fill="url(#side-fade-r)"/>
+</svg>

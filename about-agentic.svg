@@ -1,0 +1,201 @@
+<svg fill="none" viewBox="0 0 800 350" width="800" height="350" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .container {
+          font-family: 'Courier New', Courier, monospace;
+          background-color: #0d1117;
+          color: #39d353;
+          width: 800px;
+          height: 350px;
+          position: relative;
+          overflow: hidden;
+          box-sizing: border-box;
+          border: 1px solid #30363d;
+          border-radius: 8px;
+        }
+
+        /* Mac Terminal Header */
+        .terminal-header {
+          background-color: #161b22;
+          height: 28px;
+          display: flex;
+          align-items: center;
+          padding: 0 12px;
+          border-bottom: 1px solid #30363d;
+          position: relative;
+          z-index: 50;
+        }
+
+        .dot {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          margin-right: 8px;
+          display: inline-block;
+          cursor: pointer;
+        }
+        .dot.red { background-color: #ff5f56; }
+        .dot.yellow { background-color: #ffbd2e; }
+        .dot.green { background-color: #27c93f; position: relative; }
+
+        .header-title {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          left: 0;
+          color: #8b949e;
+          font-size: 12px;
+          font-weight: bold;
+          pointer-events: none;
+        }
+
+        /* Terminal Body */
+        .terminal-body {
+          padding: 20px;
+          font-size: 14px;
+          line-height: 1.6;
+          opacity: 0.9;
+          position: relative;
+          z-index: 10;
+        }
+
+        /* Syntax Highlighting */
+        .keyword { color: #ff7b72; font-weight: bold; }
+        .function { color: #d2a8ff; }
+        .string { color: #a5d6ff; }
+        .comment { color: #8b949e; font-style: italic; }
+
+        /* Typing Animation */
+        .line {
+          overflow: hidden;
+          white-space: nowrap;
+          border-right: 2px solid transparent; /* Hide initially */
+          display: inline-block;
+          max-width: 100%;
+        }
+
+        .l1 { animation: type 1s steps(40, end) forwards; border-right-color: #39d353; }
+        .l2 { opacity: 0; animation: appear 0.1s forwards 1.2s; }
+        .l3 { opacity: 0; animation: type 1.5s steps(40, end) forwards 1.3s; }
+        .l4 { opacity: 0; animation: type 1.5s steps(40, end) forwards 2.8s; }
+        .l5 { opacity: 0; animation: type 0.5s steps(20, end) forwards 4.3s; }
+        .l6 { opacity: 0; animation: type 1s steps(40, end) forwards 4.8s; }
+        .l7 { opacity: 0; animation: type 2s steps(60, end) forwards 5.8s; border-right-color: #39d353; } /* Kept typing caret block */
+
+        @keyframes type {
+          from { width: 0; opacity: 1; border-right-color: #39d353; }
+          to { width: 100%; opacity: 1; border-right-color: transparent; }
+        }
+        @keyframes appear {
+          to { opacity: 1; }
+        }
+
+        /* Easter Egg Styling - Hidden by default */
+        .easter-egg {
+          position: absolute;
+          inset: 0;
+          background-color: #000;
+          z-index: 100;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          visibility: hidden;
+          opacity: 0;
+          transition: all 0.3s ease;
+          pointer-events: none; /* Make click pass through so hover state holds */
+        }
+
+        .egg-text {
+          font-size: 24px;
+          font-weight: bold;
+          color: #39d353;
+          text-shadow: 0 0 10px #39d353, 0 0 20px #39d353;
+          animation: glitch 0.5s infinite;
+        }
+
+        .egg-sub {
+          margin-top: 10px;
+          font-size: 14px;
+          color: #a5d6ff;
+        }
+
+        @keyframes glitch {
+          0% { transform: translate(0) }
+          20% { transform: translate(-2px, 2px) }
+          40% { transform: translate(-2px, -2px) }
+          60% { transform: translate(2px, 2px) }
+          80% { transform: translate(2px, -2px) }
+          100% { transform: translate(0) }
+        }
+
+        /* The Secret Trigger */
+        .trigger-zone {
+          position: absolute;
+          top: 0;
+          left: 40px; /* Over the green dot */
+          width: 30px;
+          height: 30px;
+          cursor: crosshair;
+          z-index: 200;
+        }
+
+        /* Activating the Easter Egg */
+        .trigger-zone:hover ~ .easter-egg {
+          visibility: visible;
+          opacity: 1;
+        }
+
+        /* Background grid/dithering effect */
+        .grid {
+          position: absolute;
+          inset: 0;
+          background-image: 
+            linear-gradient(rgba(57, 211, 83, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(57, 211, 83, 0.05) 1px, transparent 1px);
+          background-size: 20px 20px;
+          opacity: 0.3;
+          pointer-events: none;
+        }
+      </style>
+
+      <div class="container">
+        <!-- The trigger over the green window button -->
+        <div class="trigger-zone" title="Execute Override?"></div>
+
+        <div class="easter-egg">
+          <div class="egg-text">SYSTEM OVERRIDE DETECTED</div>
+          <div class="egg-sub">ROOT ACCESS GRANTED. INITIALIZING KAOS.EXE...</div>
+          <div style="margin-top: 20px; font-size: 10px; opacity: 0.5; text-align: center;">
+            <p>10010101 01010010 11000101 10100101 00101001</p>
+            <p>01001010 10010100 00101010 10110010 11100100</p>
+            <p>10100101 01001100 10101001 01101000 00101010</p>
+          </div>
+        </div>
+
+        <div class="grid"></div>
+
+        <div class="terminal-header">
+          <div class="dot red"></div>
+          <div class="dot yellow"></div>
+          <div class="dot green"></div>
+          <div class="header-title">kaos_agent_node.py — 80x24</div>
+        </div>
+
+        <div class="terminal-body">
+          <div class="line l1"><span class="keyword">import</span> langgraph.graph <span class="keyword">as</span> lg</div>
+          <div class="line l2"><span class="keyword">from</span> kaos_core <span class="keyword">import</span> Brain, Caffeine</div>
+          <br/><br/>
+          <div class="line l3"><span class="comment"># Initialize AI/ML Enthusiast</span></div><br/>
+          <div class="line l4">agent = <span class="function">Brain</span>(name=<span class="string">"Harsh"</span>, alias=<span class="string">"Kaos599"</span>, mode=<span class="string">"GodMode"</span>)</div>
+          <br/><br/>
+          <div class="line l5"><span class="keyword">if</span> agent.fuel &lt; <span class="keyword">100</span>:</div><br/>
+          <div class="line l6">&nbsp;&nbsp;&nbsp;&nbsp;agent.<span class="function">consume</span>(Caffeine.ESPRESSO)</div>
+          <br/><br/>
+          <div class="line l7">agent.<span class="function">execute_mission</span>(<span class="string">"Build things that make the world slightly less terrible (and occasionally shiny)."</span>)</div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
