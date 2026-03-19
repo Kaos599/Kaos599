@@ -1,0 +1,37 @@
+<svg fill="none" viewBox="0 0 800 160" width="800" height="160" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes card-glow {
+      0%, 100% { opacity: 0.05; }
+      50% { opacity: 0.12; }
+    }
+  </style>
+  <defs>
+    <radialGradient id="glow">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="160" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="3" height="160" rx="1.5" fill="#06b6d4"/>
+  <!-- Title -->
+  <text x="24" y="32" font-size="18" font-weight="bold" font-family="'Courier New', monospace">
+    <tspan fill="#58a6ff">Faraday </tspan><tspan fill="#ec4899">::</tspan><tspan fill="#58a6ff"> Autonomous Research Agent</tspan>
+  </text>
+  <!-- Badge -->
+  <rect x="24" y="42" width="130" height="22" rx="4" fill="#161b22" stroke="#8b949e" stroke-width="1"/>
+  <text x="89" y="57" text-anchor="middle" font-size="11" fill="#8b949e" font-family="'Courier New', monospace">AGENTIC SYSTEM</text>
+  <!-- Description -->
+  <text x="24" y="82" font-size="11" fill="#8b949e" font-family="'Courier New', monospace">Autonomous web research agent investigating queries across</text>
+  <text x="24" y="98" font-size="11" fill="#8b949e" font-family="'Courier New', monospace">multiple sources. LLM-powered with dynamic tool selection.</text>
+  <!-- Tags -->
+  <rect x="24" y="112" width="62" height="22" rx="11" fill="none" stroke="#ec4899" stroke-opacity="0.4"/>
+  <text x="55" y="127" text-anchor="middle" font-size="10" fill="#ec4899" font-family="'Courier New', monospace">Agentic</text>
+  <rect x="94" y="112" width="75" height="22" rx="11" fill="none" stroke="#ec4899" stroke-opacity="0.4"/>
+  <text x="131" y="127" text-anchor="middle" font-size="10" fill="#ec4899" font-family="'Courier New', monospace">LangGraph</text>
+  <rect x="177" y="112" width="42" height="22" rx="11" fill="none" stroke="#ec4899" stroke-opacity="0.4"/>
+  <text x="198" y="127" text-anchor="middle" font-size="10" fill="#ec4899" font-family="'Courier New', monospace">LLMs</text>
+  <!-- Ambient glow -->
+  <circle cx="750" cy="130" r="80" fill="url(#glow)" style="animation: card-glow 4s ease-in-out infinite"/>
+</svg>

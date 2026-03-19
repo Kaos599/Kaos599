@@ -1,0 +1,39 @@
+<svg fill="none" viewBox="0 0 800 160" width="800" height="160" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes card-glow {
+      0%, 100% { opacity: 0.05; }
+      50% { opacity: 0.12; }
+    }
+  </style>
+  <defs>
+    <radialGradient id="glow">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="160" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="3" height="160" rx="1.5" fill="#f59e0b"/>
+  <!-- Title -->
+  <text x="24" y="32" font-size="18" font-weight="bold" font-family="'Courier New', monospace">
+    <tspan fill="#58a6ff">Sprout </tspan><tspan fill="#ec4899">::</tspan><tspan fill="#58a6ff"> Community Growth Agent</tspan>
+  </text>
+  <!-- Badge -->
+  <rect x="24" y="42" width="150" height="22" rx="4" fill="#1a1708" stroke="#e3b341" stroke-width="1"/>
+  <text x="99" y="57" text-anchor="middle" font-size="11" fill="#e3b341" font-family="'Courier New', monospace">COMMUNITY GROWTH</text>
+  <!-- Description -->
+  <text x="24" y="82" font-size="11" fill="#8b949e" font-family="'Courier New', monospace">Autonomous GenAI agent fostering engagement and answering</text>
+  <text x="24" y="98" font-size="11" fill="#8b949e" font-family="'Courier New', monospace">technical queries to grow developer communities.</text>
+  <!-- Tags -->
+  <rect x="24" y="112" width="75" height="22" rx="11" fill="none" stroke="#ec4899" stroke-opacity="0.4"/>
+  <text x="61" y="127" text-anchor="middle" font-size="10" fill="#ec4899" font-family="'Courier New', monospace">LLM Swarm</text>
+  <rect x="107" y="112" width="62" height="22" rx="11" fill="none" stroke="#ec4899" stroke-opacity="0.4"/>
+  <text x="138" y="127" text-anchor="middle" font-size="10" fill="#ec4899" font-family="'Courier New', monospace">Discord</text>
+  <rect x="177" y="112" width="75" height="22" rx="11" fill="none" stroke="#ec4899" stroke-opacity="0.4"/>
+  <text x="214" y="127" text-anchor="middle" font-size="10" fill="#ec4899" font-family="'Courier New', monospace">LangChain</text>
+  <rect x="260" y="112" width="36" height="22" rx="11" fill="none" stroke="#ec4899" stroke-opacity="0.4"/>
+  <text x="278" y="127" text-anchor="middle" font-size="10" fill="#ec4899" font-family="'Courier New', monospace">GCP</text>
+  <!-- Ambient glow -->
+  <circle cx="750" cy="130" r="80" fill="url(#glow)" style="animation: card-glow 4s ease-in-out infinite"/>
+</svg>

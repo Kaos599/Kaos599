@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 30" width="800" height="30">
+  <style>
+    @keyframes divider-flow {
+      from { stroke-dashoffset: 0; }
+      to { stroke-dashoffset: -120; }
+    }
+  </style>
+  <line x1="10" y1="15" x2="790" y2="15" stroke="#334155" stroke-width="1"
+        stroke-dasharray="4 2" style="animation: divider-flow 15s linear infinite"/>
+  <rect x="320" y="4" width="160" height="22" rx="2" fill="#0a0f1e"/>
+  <text x="400" y="19" text-anchor="middle" font-size="10" fill="#475569"
+        font-family="'Courier New', monospace">[ PROJECTS ]</text>
+</svg>

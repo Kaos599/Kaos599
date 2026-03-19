@@ -1,195 +1,174 @@
-<br clear="both">
-
-<h1 align="left">Hi 👋! I'm Harsh Dayal (Kaos).</h1>
-
-###
-
-<h3 align="left">A Tech Undergrad, Eternally curious with a thirst for knowledge, Sharpening my skills to make the world a better place. Making products that feels aesthetic, easy to use and carry an objective to solve something important.💻</h3>
-
-###
-
-<br clear="both">
-
 <div align="center">
-  <img height="200" src="https://media.tenor.com/xEFoZaAo2dMAAAAi/club-penguin-dance.gif"  />
-</div>
+  <img src="assets/hero-banner.svg" alt="Harsh Dayal - Kaos599" width="100%">
+  <br/>
 
-###
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kaos599&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=chartreuse-dark&locale=en&hide_border=false" height="150" alt="stats graph"  />
-  <img src="https://streak-stats.demolab.com?user=kaos599&locale=en&mode=weekly&theme=chartreuse-dark&hide_border=false&border_radius=5" height="150" alt="streak graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=kaos599&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=chartreuse-dark&hide_border=false" height="150" alt="languages graph"  />
-</div>
-
-###
-
-
-<div align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=kaos599.kaos599&right_color=darkviolet&left_text=Profile%20Views"  />
-</div>
-
-
-
-###
-
-<br clear="both">
-
-<img src="https://raw.githubusercontent.com/kaos599/kaos599/output/snake.svg" alt="Snake animation" />
-
-###
-
-###
-
-<div align="center">
-  <a href="https://www.linkedin.com/in/harshdayal/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
+  <a href="https://linkedin.com/in/harshdayal599">
+    <img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iJTIzZWM0ODk5Ij48cGF0aCBkPSJNMjAuNDQ3IDIwLjQ1MmgtMy41NTR2LTUuNTY5YzAtMS4zMjgtLjAyNy0zLjAzNy0xLjg1Mi0zLjAzNy0xLjg1MyAwLTIuMTM2IDEuNDQ1LTIuMTM2IDIuOTM5djUuNjY3SDkuMzUxVjloMy40MTR2MS41NjFoLjA0NmMuNDc3LS45IDEuNjM3LTEuODUgMy4zNy0xLjg1IDMuNjAxIDAgNC4yNjcgMi4zNyA0LjI2NyA1LjQ1NXY2LjI4NnpNNS4zMzcgNy40MzNhMi4wNjIgMi4wNjIgMCAwIDEtMi4wNjMtMi4wNjUgMi4wNjQgMi4wNjQgMCAxIDEgMi4wNjMgMi4wNjV6bTEuNzgyIDEzLjAxOUgzLjU1NVY5aDMuNTY0djExLjQ1MnpNMjIuMjI1IDBIMS43NzFDLjc5MiAwIDAgLjc3NCAwIDEuNzI5djIwLjU0MkMwIDIzLjIyNy43OTIgMjQgMS43NzEgMjRoMjAuNDUxQzIzLjIgMjQgMjQgMjMuMjI3IDI0IDIyLjI3MVYxLjcyOUMyNCAuNzc0IDIzLjIgMCAyMi4yMjIgMGguMDAzeiIvPjwvc3ZnPg==" alt="LinkedIn" />
   </a>
-  <a href="mr0x4ww6@anonaddy.me" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
+  <a href="https://x.com/HarshDayal5">
+    <img src="https://img.shields.io/badge/X-0d1117?style=for-the-badge&logo=x&logoColor=ec4899" alt="X" />
   </a>
-  <a href="Kaos599" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="discord logo"  />
+  <a href="mailto:harshdayal599@gmail.com">
+    <img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=ec4899" alt="Email" />
   </a>
-  <a href="Kaos.27" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Signal&logo=signal&label=&color=039BE5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="signal logo"  />
-  </a>
-  <a href="Kaos599" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=TryHackMe&logo=tryhackme&label=&color=88cc14&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="tryhackme logo"  />
-  </a>
-  <a href="linktr.ee/hd13" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Linktree&logo=linktree&label=&color=1de9b6&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linktree logo"  />
+  <a href="https://harshdayal.framer.website/">
+    <img src="https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&logo=framer&logoColor=ec4899" alt="Portfolio" />
   </a>
 </div>
 
-###
+<br/>
 
-<h2 align="center">Skills:-</h2>
-
-###
-
-<h4 align="center">Platform:</h4>
-
-###
-
-<br clear="both">
-
+<!-- Plain-text about — always visible even without SVG rendering -->
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="30" alt="vscode logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" height="30" alt="jupyter logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" height="30" alt="googlecloud logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" alt="git logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="30" alt="github logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="30" alt="docker logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firefox/firefox-original.svg" height="30" alt="firefox logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="30" alt="linux logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" height="30" alt="android logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" height="30" alt="anaconda logo"  />
-  <img width="12" />
-  <img src="https://github.com/raycast/extensions/blob/main/extensions/vmware-vcenter/assets/icons/os/windows.png?raw=true" height="30" alt="windows8 logo"  />
-  <img width="12" />
-  <img src="https://cdn.simpleicons.org/wordpress/21759B" height="30" alt="wordpress logo"  />
+  <strong>AI/ML Engineer & Agent Architect</strong> · Building agentic systems with LangGraph, MCP, and vector memory<br/>
+  <!-- TODO: Update with your details -->
+  B.Tech Computer Science · Vellore Institute of Technology · Class of 2026<br/>
+  <em>Google GenAI Exchange Hackathon Winner </em><br/>
+  <!-- Uncomment when actively looking: -->
+  <!-- <strong>Open to ML Engineering / AI Agent roles — internship or full-time</strong> -->
 </div>
 
-###
-
-<h4 align="center">Programming Languages:</h4>
-
-###
-
-<br clear="both">
+<br/>
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="30" alt="c logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="30" alt="cplusplus logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30" alt="java logo"  />
-  <img width="12" />
+  <img src="assets/divider-system-core.svg" width="100%">
 </div>
-
-###
-
-<h4 align="center">Machine Learning:</h4>
-
-###
-
-<br clear="both">
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="30" alt="tensorflow logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" height="30" alt="pytorch logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="30" alt="numpy logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="30" alt="pandas logo"  />
-  <img width="12" />
-  <img src="https://cdn.simpleicons.org/opencv/5C3EE8" height="30" alt="opencv logo"  />
+  <img src="assets/about-agentic.svg" alt="Kaos AI Terminal" width="100%">
 </div>
 
-###
-
-<h4 align="center">Tools:</h4>
-
-###
-
-<br clear="both">
+<br/>
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" height="30" alt="androidstudio logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" height="30" alt="matlab logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" height="30" alt="firebase logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="30" alt="mysql logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" height="30" alt="sqlite logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" height="30" alt="sqlalchemy logo"  />
+  <img src="assets/divider-skill-map.svg" width="100%">
 </div>
-
-###
-
-<h4 align="center">Graphics & Design:</h4>
-
-###
-
-<br clear="both">
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/behance/behance-original.svg" height="30" alt="behance logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" height="30" alt="canva logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="30" alt="figma logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg" height="30" alt="webflow logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qt/qt-original.svg" height="30" alt="qt logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" height="30" alt="illustrator logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-plain.svg" height="30" alt="premierepro logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" height="30" alt="photoshop logo"  />
+  <img src="assets/vitruvian-kaos.svg" alt="Kaos Skills Map" width="100%">
 </div>
 
-###
+<br/>
 
-<p align="center">
-    <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote"/>
-</p>
+<div align="center">
+  <img src="assets/divider-core-stack.svg" width="100%">
+</div>
 
+<div align="center">
+  <img alt="Kaos Core Stack Architecture" src="assets/core-stack.svg" width="100%">
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="assets/divider-projects.svg" width="100%">
+</div>
+
+<div align="center">
+  <a href="https://github.com/Kaos599/Cascade">
+    <img src="assets/card-cascade.svg" alt="Cascade" width="100%">
+  </a>
+  <br/>
+  <a href="https://github.com/Kaos599/Faraday">
+    <img src="assets/card-faraday.svg" alt="Faraday" width="100%">
+  </a>
+  <br/>
+  <a href="https://github.com/Kaos599/LegalSphere">
+    <img src="assets/card-legalsphere.svg" alt="LegalSphere" width="100%">
+  </a>
+  <br/>
+  <a href="https://github.com/Kaos599/Sprout">
+    <img src="assets/card-sprout.svg" alt="Sprout" width="100%">
+  </a>
+  <br/>
+  <a href="https://github.com/Kaos599/Apollo">
+    <img src="assets/card-apollo.svg" alt="Apollo" width="100%">
+  </a>
+  <br/>
+  <a href="https://github.com/Kaos599/Numerate">
+    <img src="assets/card-numerate.svg" alt="Numerate" width="100%">
+  </a>
+  <br/><br/>
+  <a href="https://github.com/Kaos599?tab=repositories">
+    <img src="https://img.shields.io/badge/View_All_Repositories_%E2%86%92-0d1117?style=for-the-badge&logoColor=ec4899" alt="View All Repositories" />
+  </a>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="assets/divider-manifesto.svg" width="100%">
+</div>
+
+### // The Build Philosophy
+
+The tools I can't stop thinking about share one property: they make you feel something before they explain themselves. The interface communicates intent. The system has a point of view. The experience is inseparable from the function.
+
+Most software solves the problem and calls it done. I want the version that also makes you go — *oh, this was built by someone who actually thought about this.*
+
+That means different things depending on what I'm building:
+
+| If it's an **agent system** | It shouldn't just work — it should be legible. You should be able to watch it think. State transitions, memory writes, tool calls — LangGraph makes the architecture *the product*. |
+| :--- | :--- |
+| If it's an **ML model** | The loss curve is aesthetic. Watching a model learn to separate signal from noise is one of the most satisfying things I know. I care about what the architecture is doing at every layer, not just the final metric. |
+| If it's an **interface** | The terminal is enough canvas. Dense information, monospace type, a palette that doesn't apologize — if it looks like a cockpit, it probably works like one. |
+| If it's a **backend** | It should be invisible in the right way. No drama, no surprises, fast enough that the frontend never has to apologize for it. MCP protocol, FastAPI — tools that stay out of the way. |
+
+The constraint I keep coming back to: **a beautiful thing that doesn't solve the problem is art. A solution that's ugly is a missed opportunity.** I want both, every time.
+
+---
+
+### ∞ The Eternal Curiosity Problem
+
+I have a condition. It starts with one question — *why does attention scale like this?* — and three hours later I'm reading a 1976 paper on Byzantine fault tolerance wondering if distributed consensus has anything useful to say about multi-agent routing. (It does.)
+
+Some rabbit holes I've genuinely gone down: why transformers work when the theoretical guarantees are so weak · whether human memory consolidation during sleep maps to agent memory architectures · what makes a color palette *actually* good · the geometry of high-dimensional vector spaces and why cosine similarity is weirder than it looks.
+
+> *"The test of a first-rate intelligence is the ability to hold two opposed ideas in mind at the same time and still retain the ability to function."* — F. Scott Fitzgerald, unknowingly describing debugging at 2am.
+
+<br/>
+
+<div align="center">
+  <img src="assets/divider-telemetry.svg" width="100%">
+</div>
+
+### System Telemetry
+
+<div align="center">
+  <table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center">
+        <a href="https://github.com/Kaos599">
+          <img src="https://streak-stats.demolab.com?user=Kaos599&theme=tokyonight&hide_border=true&border_radius=4" alt="GitHub Streak" width="380" />
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/Kaos599">
+          <img src="https://github-readme-stats.vercel.app/api?username=Kaos599&show_icons=true&theme=tokyonight&hide_border=true&border_radius=4" alt="GitHub Stats" width="380" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <br/>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kaos599&layout=compact&theme=tokyonight&hide_border=true&border_radius=4" alt="Top Languages" width="380" />
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br/>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Kaos599/Kaos599/output/snake.svg?palette=github-dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Kaos599/Kaos599/output/snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Kaos599/Kaos599/output/snake.svg">
+  </picture>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Courier+New&color=ec4899&size=16&center=true&vCenter=true&width=600&height=40&lines=Structured+Kaos+System+Online;Waiting+for+next+input...;END_OF_TRANSMISSION" alt="Typing SVG" />
+</div>

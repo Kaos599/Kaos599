@@ -1,0 +1,340 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <defs>
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#1e293b" />
+    </pattern>
+
+    <!-- Neon Glow Filters -->
+    <filter id="glow-pink" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur1" />
+      <feGaussianBlur stdDeviation="5" result="blur2" />
+      <feGaussianBlur stdDeviation="10" result="blur3" />
+      <feMerge>
+        <feMergeNode in="blur3" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur1" />
+      <feGaussianBlur stdDeviation="5" result="blur2" />
+      <feGaussianBlur stdDeviation="10" result="blur3" />
+      <feMerge>
+        <feMergeNode in="blur3" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Gradient for Core -->
+    <radialGradient id="core-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="1" />
+      <stop offset="70%" stop-color="#ec4899" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#9d174d" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <style>
+    .bg { fill: #0a0f1e; }
+    .text { font-family: 'Courier New', monospace; font-size: 11px; fill: #94a3b8; }
+    .text-title { font-size: 13px; font-weight: bold; letter-spacing: 1px; }
+
+    /* Domain Colors */
+    .c-pink { fill: #ec4899; }
+    .c-pink-stroke { stroke: #ec4899; }
+    .c-cyan { fill: #06b6d4; }
+    .c-cyan-stroke { stroke: #06b6d4; }
+    .c-purple { fill: #a855f7; }
+    .c-purple-stroke { stroke: #a855f7; }
+    .c-amber { fill: #f59e0b; }
+    .c-amber-stroke { stroke: #f59e0b; }
+
+    /* Animations — 6 keyframes only */
+    @keyframes bar-grow {
+      from { stroke-dashoffset: 100; }
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes data-flow {
+      to { stroke-dashoffset: -100; }
+    }
+    @keyframes data-flow-reverse {
+      to { stroke-dashoffset: 100; }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.05); opacity: 1; }
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes spin-reverse {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    /* Applied Classes */
+    .core-pulse { transform-origin: 400px 260px; animation: pulse 3s ease-in-out infinite; }
+    .core-ring-1 { transform-origin: 400px 260px; animation: spin 20s linear infinite; }
+    .core-ring-2 { transform-origin: 400px 260px; animation: spin-reverse 15s linear infinite; }
+
+    .data-trace { fill: none; stroke-width: 1.5; opacity: 0.3; }
+    .data-packet {
+      fill: none; stroke-width: 2;
+      stroke-dasharray: 4 12;
+      animation: data-flow 2s linear infinite;
+    }
+    .data-packet-rev {
+      fill: none; stroke-width: 2;
+      stroke-dasharray: 4 12;
+      animation: data-flow-reverse 2s linear infinite;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" class="bg" />
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- DATA TRACES (L-shaped Circuit Paths) -->
+  <g id="circuit-traces">
+    <!-- Top Left (AI) Traces -->
+    <path d="M 400 260 L 320 180 L 80 180" class="data-trace c-pink-stroke" />
+    <path d="M 400 260 L 320 180 L 80 180" class="data-packet c-pink-stroke" filter="url(#glow-pink)" />
+    <path d="M 380 260 L 300 180 L 300 60 L 80 60" class="data-trace c-pink-stroke" />
+    <path d="M 380 260 L 300 180 L 300 60 L 80 60" class="data-packet c-pink-stroke" />
+
+    <!-- Top Right (Infra) Traces -->
+    <path d="M 400 260 L 480 180 L 720 180" class="data-trace c-cyan-stroke" />
+    <path d="M 400 260 L 480 180 L 720 180" class="data-packet c-cyan-stroke" filter="url(#glow-cyan)" />
+    <path d="M 420 260 L 500 180 L 500 60 L 720 60" class="data-trace c-cyan-stroke" />
+    <path d="M 420 260 L 500 180 L 500 60 L 720 60" class="data-packet c-cyan-stroke" />
+
+    <!-- Bottom Left (Data) Traces -->
+    <path d="M 400 260 L 320 340 L 80 340" class="data-trace c-purple-stroke" />
+    <path d="M 400 260 L 320 340 L 80 340" class="data-packet-rev c-purple-stroke" />
+    <path d="M 380 260 L 300 340 L 300 460 L 80 460" class="data-trace c-purple-stroke" />
+    <path d="M 380 260 L 300 340 L 300 460 L 80 460" class="data-packet-rev c-purple-stroke" />
+
+    <!-- Bottom Right (Tools) Traces -->
+    <path d="M 400 260 L 480 340 L 720 340" class="data-trace c-amber-stroke" />
+    <path d="M 400 260 L 480 340 L 720 340" class="data-packet-rev c-amber-stroke" />
+    <path d="M 420 260 L 500 340 L 500 460 L 720 460" class="data-trace c-amber-stroke" />
+    <path d="M 420 260 L 500 340 L 500 460 L 720 460" class="data-packet-rev c-amber-stroke" />
+  </g>
+
+  <!-- THE AI CORE (Center) -->
+  <g id="cpu-core">
+    <!-- Glow back -->
+    <circle cx="400" cy="260" r="40" fill="url(#core-grad)" class="core-pulse" filter="url(#glow-pink)"/>
+
+    <!-- Rotating Rings -->
+    <g class="core-ring-1">
+      <circle cx="400" cy="260" r="30" fill="none" stroke="#ec4899" stroke-width="1" stroke-dasharray="10 5 2 5" opacity="0.6"/>
+      <circle cx="400" cy="260" r="36" fill="none" stroke="#f472b6" stroke-width="0.5" stroke-dasharray="1 4" opacity="0.4"/>
+    </g>
+    <g class="core-ring-2">
+      <circle cx="400" cy="260" r="22" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="20 10" opacity="0.8"/>
+    </g>
+
+    <!-- Center Hexagonal Node -->
+    <polygon points="400,245 413,252 413,268 400,275 387,268 387,252" fill="#0a0f1e" stroke="#ec4899" stroke-width="2" class="core-pulse" />
+    <circle cx="400" cy="260" r="4" fill="#ec4899" filter="url(#glow-pink)" />
+  </g>
+
+  <!-- DOMAIN CLUSTERS -->
+
+  <!-- Top Left: AI/ML (Pink) -->
+  <g transform="translate(40, 40)">
+    <rect x="0" y="0" width="220" height="24" fill="#1e293b" opacity="0.5" rx="2" />
+    <rect x="0" y="0" width="3" height="24" fill="#ec4899" />
+    <text x="12" y="16" class="text c-pink text-title">> SYS.AI // AGENTIC</text>
+
+    <!-- Python 90% -->
+    <text x="12" y="45" class="text">Python</text>
+    <line x1="120" y1="42" x2="220" y2="42" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="42" x2="210" y2="42" stroke="#ec4899" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="90" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.2s backwards"/>
+
+    <!-- LangGraph 85% -->
+    <text x="12" y="65" class="text">LangGraph</text>
+    <line x1="120" y1="62" x2="220" y2="62" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="62" x2="205" y2="62" stroke="#ec4899" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="85" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.35s backwards"/>
+
+    <!-- LangChain 80% -->
+    <text x="12" y="85" class="text">LangChain</text>
+    <line x1="120" y1="82" x2="220" y2="82" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="82" x2="200" y2="82" stroke="#ec4899" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="80" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.5s backwards"/>
+
+    <!-- PyTorch 78% -->
+    <text x="12" y="105" class="text">PyTorch</text>
+    <line x1="120" y1="102" x2="220" y2="102" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="102" x2="198" y2="102" stroke="#ec4899" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="78" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.65s backwards"/>
+
+    <!-- TensorFlow 72% -->
+    <text x="12" y="125" class="text">TensorFlow</text>
+    <line x1="120" y1="122" x2="220" y2="122" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="122" x2="192" y2="122" stroke="#ec4899" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="72" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.8s backwards"/>
+
+    <!-- HuggingFace 68% -->
+    <text x="12" y="145" class="text">HuggingFace</text>
+    <line x1="120" y1="142" x2="220" y2="142" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="142" x2="188" y2="142" stroke="#f472b6" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="68" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.95s backwards"/>
+
+    <!-- Ollama 60% -->
+    <text x="12" y="165" class="text">Ollama</text>
+    <line x1="120" y1="162" x2="220" y2="162" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="162" x2="180" y2="162" stroke="#f472b6" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="60" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 1.1s backwards"/>
+  </g>
+
+  <!-- Top Right: Infra (Cyan) -->
+  <g transform="translate(540, 40)">
+    <rect x="0" y="0" width="220" height="24" fill="#1e293b" opacity="0.5" rx="2" />
+    <rect x="217" y="0" width="3" height="24" fill="#06b6d4" />
+    <text x="12" y="16" class="text c-cyan text-title">> SYS.INFRA // SCALABLE</text>
+
+    <!-- FastAPI 85% -->
+    <text x="12" y="45" class="text">FastAPI</text>
+    <line x1="120" y1="42" x2="220" y2="42" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="42" x2="205" y2="42" stroke="#06b6d4" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="85" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.2s backwards"/>
+
+    <!-- Docker 70% -->
+    <text x="12" y="65" class="text">Docker</text>
+    <line x1="120" y1="62" x2="220" y2="62" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="62" x2="190" y2="62" stroke="#06b6d4" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="70" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.35s backwards"/>
+
+    <!-- GCP 68% -->
+    <text x="12" y="85" class="text">GCP</text>
+    <line x1="120" y1="82" x2="220" y2="82" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="82" x2="188" y2="82" stroke="#06b6d4" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="68" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.5s backwards"/>
+
+    <!-- Django 65% -->
+    <text x="12" y="105" class="text">Django</text>
+    <line x1="120" y1="102" x2="220" y2="102" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="102" x2="185" y2="102" stroke="#06b6d4" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="65" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.65s backwards"/>
+
+    <!-- Azure 60% -->
+    <text x="12" y="125" class="text">Azure</text>
+    <line x1="120" y1="122" x2="220" y2="122" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="122" x2="180" y2="122" stroke="#06b6d4" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="60" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.8s backwards"/>
+  </g>
+
+  <!-- Bottom Left: Data (Purple) -->
+  <g transform="translate(40, 310)">
+    <rect x="0" y="0" width="220" height="24" fill="#1e293b" opacity="0.5" rx="2" />
+    <rect x="0" y="0" width="3" height="24" fill="#a855f7" />
+    <text x="12" y="16" class="text c-purple text-title">> SYS.DATA // VECTORS</text>
+
+    <!-- Qdrant 82% -->
+    <text x="12" y="45" class="text">Qdrant</text>
+    <line x1="120" y1="42" x2="220" y2="42" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="42" x2="202" y2="42" stroke="#a855f7" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="82" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.2s backwards"/>
+
+    <!-- MongoDB 78% -->
+    <text x="12" y="65" class="text">MongoDB</text>
+    <line x1="120" y1="62" x2="220" y2="62" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="62" x2="198" y2="62" stroke="#a855f7" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="78" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.35s backwards"/>
+
+    <!-- ChromaDB 75% -->
+    <text x="12" y="85" class="text">ChromaDB</text>
+    <line x1="120" y1="82" x2="220" y2="82" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="82" x2="195" y2="82" stroke="#a855f7" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="75" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.5s backwards"/>
+
+    <!-- PostgreSQL 70% -->
+    <text x="12" y="105" class="text">PostgreSQL</text>
+    <line x1="120" y1="102" x2="220" y2="102" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="102" x2="190" y2="102" stroke="#a855f7" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="70" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.65s backwards"/>
+  </g>
+
+  <!-- Bottom Right: Tools (Amber) -->
+  <g transform="translate(540, 310)">
+    <rect x="0" y="0" width="220" height="24" fill="#1e293b" opacity="0.5" rx="2" />
+    <rect x="217" y="0" width="3" height="24" fill="#f59e0b" />
+    <text x="12" y="16" class="text c-amber text-title">> SYS.TOOLS // INTERFACE</text>
+
+    <!-- Claude Code 88% -->
+    <text x="12" y="45" class="text">Claude Code</text>
+    <line x1="120" y1="42" x2="220" y2="42" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="42" x2="208" y2="42" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="88" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.2s backwards"/>
+
+    <!-- Cursor 85% -->
+    <text x="12" y="65" class="text">Cursor</text>
+    <line x1="120" y1="62" x2="220" y2="62" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="62" x2="205" y2="62" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="85" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.35s backwards"/>
+
+    <!-- Streamlit 75% -->
+    <text x="12" y="85" class="text">Streamlit</text>
+    <line x1="120" y1="82" x2="220" y2="82" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="82" x2="195" y2="82" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="75" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.5s backwards"/>
+
+    <!-- Jupyter 72% -->
+    <text x="12" y="105" class="text">Jupyter</text>
+    <line x1="120" y1="102" x2="220" y2="102" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="102" x2="192" y2="102" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="72" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.65s backwards"/>
+
+    <!-- ArXiv 65% -->
+    <text x="12" y="125" class="text">ArXiv</text>
+    <line x1="120" y1="122" x2="220" y2="122" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+    <line x1="120" y1="122" x2="185" y2="122" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"
+          stroke-dasharray="65" stroke-dashoffset="0"
+          style="animation: bar-grow 2s ease-out 0.8s backwards"/>
+  </g>
+
+  <!-- Hackathon Winner Badge -->
+  <g transform="translate(400, 480)">
+    <rect x="-140" y="-15" width="280" height="30" fill="#0f172a" stroke="#ec4899" stroke-width="1" rx="4" filter="url(#glow-pink)"/>
+    <text x="0" y="5" class="text c-pink text-title" text-anchor="middle" font-size="12">&#x2605; WINNER: Google GenAI Exchange</text>
+  </g>
+
+  <!-- UI Overlay elements -->
+  <text x="400" y="20" class="text c-pink" text-anchor="middle" opacity="0.5">SYS.CORE_STACK_INIT // v2.0</text>
+  <path d="M 380 25 L 420 25" stroke="#ec4899" stroke-width="1" opacity="0.5" />
+  <!-- Corner indicator dots -->
+  <circle cx="20" cy="20" r="3" fill="#ec4899" />
+  <circle cx="780" cy="20" r="3" fill="#06b6d4" />
+  <circle cx="20" cy="500" r="3" fill="#a855f7" />
+  <circle cx="780" cy="500" r="3" fill="#f59e0b" />
+
+</svg>

@@ -1,0 +1,39 @@
+<svg fill="none" viewBox="0 0 800 160" width="800" height="160" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes card-glow {
+      0%, 100% { opacity: 0.05; }
+      50% { opacity: 0.12; }
+    }
+  </style>
+  <defs>
+    <radialGradient id="glow">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="160" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="3" height="160" rx="1.5" fill="#ec4899"/>
+  <!-- Title -->
+  <text x="24" y="32" font-size="18" font-weight="bold" font-family="'Courier New', monospace">
+    <tspan fill="#58a6ff">Cascade </tspan><tspan fill="#ec4899">::</tspan><tspan fill="#58a6ff"> GenAI Study Companion</tspan>
+  </text>
+  <!-- Badge -->
+  <rect x="24" y="42" width="230" height="22" rx="4" fill="#1a1708" stroke="#e3b341" stroke-width="1"/>
+  <text x="139" y="57" text-anchor="middle" font-size="11" fill="#e3b341" font-family="'Courier New', monospace">&#9733; WINNER Google GenAI Exchange</text>
+  <!-- Description -->
+  <text x="24" y="82" font-size="11" fill="#8b949e" font-family="'Courier New', monospace">AI-powered study companion bridging skills to career goals.</text>
+  <text x="24" y="98" font-size="11" fill="#8b949e" font-family="'Courier New', monospace">Personalized learning paths for targeted skill mastery.</text>
+  <!-- Tags -->
+  <rect x="24" y="112" width="49" height="22" rx="11" fill="none" stroke="#ec4899" stroke-opacity="0.4"/>
+  <text x="48" y="127" text-anchor="middle" font-size="10" fill="#ec4899" font-family="'Courier New', monospace">GenAI</text>
+  <rect x="81" y="112" width="75" height="22" rx="11" fill="none" stroke="#ec4899" stroke-opacity="0.4"/>
+  <text x="118" y="127" text-anchor="middle" font-size="10" fill="#ec4899" font-family="'Courier New', monospace">Education</text>
+  <rect x="164" y="112" width="55" height="22" rx="11" fill="none" stroke="#ec4899" stroke-opacity="0.4"/>
+  <text x="191" y="127" text-anchor="middle" font-size="10" fill="#ec4899" font-family="'Courier New', monospace">Python</text>
+  <rect x="227" y="112" width="36" height="22" rx="11" fill="none" stroke="#ec4899" stroke-opacity="0.4"/>
+  <text x="245" y="127" text-anchor="middle" font-size="10" fill="#ec4899" font-family="'Courier New', monospace">SQL</text>
+  <!-- Ambient glow -->
+  <circle cx="750" cy="130" r="80" fill="url(#glow)" style="animation: card-glow 4s ease-in-out infinite"/>
+</svg>
