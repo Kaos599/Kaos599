@@ -141,7 +141,7 @@ Some rabbit holes I've genuinely gone down: why transformers work when the theor
     <tr>
       <td align="center">
         <a href="https://github.com/Kaos599">
-          <img src="https://streak-stats.demolab.com?user=Kaos599&theme=tokyonight&hide_border=true&border_radius=4" alt="GitHub Streak" width="380" />
+          <img src="https://streak-stats.demolab.com?user=Kaos599&theme=tokyonight&hide_border=true&border_radius=4&mode=weekly" alt="GitHub Streak" width="380" />
         </a>
       </td>
       <td align="center">
