@@ -106,7 +106,7 @@
 
 The tools I can't stop thinking about share one property: they make you feel something before they explain themselves. The interface communicates intent. The system has a point of view. The experience is inseparable from the function.
 
-Most software solves the problem and calls it done. I want the version that also makes you go — *oh, this was built by someone who actually thought about this.*
+Most software solves the problem and calls it done. I want the version that also makes you go *oh, this was built by someone who cares about me as a user.*
 
 That means different things depending on what I'm building:
 
@@ -126,7 +126,7 @@ I have a condition. It starts with one question — *why does attention scale li
 
 Some rabbit holes I've genuinely gone down: why transformers work when the theoretical guarantees are so weak · whether human memory consolidation during sleep maps to agent memory architectures · what makes a color palette *actually* good · the geometry of high-dimensional vector spaces and why cosine similarity is weirder than it looks.
 
-> *"The test of a first-rate intelligence is the ability to hold two opposed ideas in mind at the same time and still retain the ability to function."* — F. Scott Fitzgerald, unknowingly describing debugging at 2am.
+> *"The test of a first-rate intelligence is the ability to hold two opposed ideas in mind at the same time and still retain the ability to function."* - F. Scott Fitzgerald, unknowingly describing debugging at 2am.
 
 <br/>
 
