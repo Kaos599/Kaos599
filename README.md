@@ -4,16 +4,16 @@
 <div align="center">
   <img height="200" src="https://media.tenor.com/xEFoZaAo2dMAAAAi/club-penguin-dance.gif"  />
 </div>
-  <a href="https://linkedin.com/in/harshdayal599">
-    <img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iJTIzZWM0ODk5Ij48cGF0aCBkPSJNMjAuNDQ3IDIwLjQ1MmgtMy41NTR2LTUuNTY5YzAtMS4zMjgtLjAyNy0zLjAzNy0xLjg1Mi0zLjAzNy0xLjg1MyAwLTIuMTM2IDEuNDQ1LTIuMTM2IDIuOTM5djUuNjY3SDkuMzUxVjloMy40MTR2MS41NjFoLjA0NmMuNDc3LS45IDEuNjM3LTEuODUgMy4zNy0xLjg1IDMuNjAxIDAgNC4yNjcgMi4zNyA0LjI2NyA1LjQ1NXY2LjI4NnpNNS4zMzcgNy40MzNhMi4wNjIgMi4wNjIgMCAwIDEtMi4wNjMtMi4wNjUgMi4wNjQgMi4wNjQgMCAxIDEgMi4wNjMgMi4wNjV6bTEuNzgyIDEzLjAxOUgzLjU1NVY5aDMuNTY0djExLjQ1MnpNMjIuMjI1IDBIMS43NzFDLjc5MiAwIDAgLjc3NCAwIDEuNzI5djIwLjU0MkMwIDIzLjIyNy43OTIgMjQgMS43NzEgMjRoMjAuNDUxQzIzLjIgMjQgMjQgMjMuMjI3IDI0IDIyLjI3MVYxLjcyOUMyNCAuNzc0IDIzLjIgMCAyMi4yMjIgMGguMDAzeiIvPjwvc3ZnPg==" alt="LinkedIn" />
+  <a href="https://www.linkedin.com/in/harshdayal">
+    <img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iJTIzZWM0ODk5Ij48cGF0aCBkPSJNMjAuNDQ3IDIwLjQ1MmgtMy41NTR2LTUuNTY5YzAtMS4zMjgtLjAyNy0zLjAzNy0xLjg1Mi0zLjAzNy0xLjg1MyAwLTIuMTM2IDEuNDQ1LTIuMTM2IDIuOTM5djUuNjY3SDkuMzUxVjloMy40MTR2MS41NjFoLjA0NmMuNDc3LS45IDEuNjM3LTEuODUgMy4zNy0xLjg1IDMuNjAxIDAgNC4yNjcgMi4zNyA0LjI2NyA1LjQ1NXY2LjI4enpNNS4zMzcgNy40MzNhMi4wNjIgMi4wNjIgMCAwIDEtMi4wNjMtMi4wNjUgMi4wNjQgMi4wNjQgMCAxIDEgMi4wNjMgMi4wNjV6bTEuNzgyIDEzLjAxOUgzLjU1NVY5aDMuNTY0djExLjQ1MnpNMjIuMjI1IDBIMS43NzFDLjc5MiAwIDAgLjc3NCAwIDEuNzI5djIwLjU0MkMwIDIzLjIyNy43OTIgMjQgMS43NzEgMjRoMjAuNDUxQzIzLjIgMjQgMjQgMjMuMjI3IDI0IDIyLjI3MVYxLjcyOUMyNCAuNzc0IDIzLjIgMCAyMi4yMjIgMGguMDAzeiIvPjwvc3ZnPg==" alt="LinkedIn" />
   </a>
   <a href="https://x.com/HarshDayal5">
     <img src="https://img.shields.io/badge/X-0d1117?style=for-the-badge&logo=x&logoColor=ec4899" alt="X" />
   </a>
-  <a href="mailto:harshdayal599@gmail.com">
+  <a href="mailto:harshdayal13@gmail.com">
     <img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=ec4899" alt="Email" />
   </a>
-  <a href="https://harshdayal.framer.website/">
+  <a href="https://harshdayal.dev">
     <img src="https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&logo=framer&logoColor=ec4899" alt="Portfolio" />
   </a>
 </div>
@@ -22,12 +22,11 @@
 
 <!-- Plain-text about — always visible even without SVG rendering -->
 <div align="center">
-  <strong>AI/ML Engineer & Agent Architect</strong> · Building agentic systems with LangGraph, MCP, and vector memory<br/>
-  <!-- TODO: Update with your details -->
-  B.Tech Computer Science · Vellore Institute of Technology · Class of 2026<br/>
-  <em>Google GenAI Exchange Hackathon Winner </em><br/>
-  <!-- Uncomment when actively looking: -->
-  <!-- <strong>Open to ML Engineering / AI Agent roles — internship or full-time</strong> -->
+  <strong>Harsh Dayal</strong> · Kaos599<br/>
+  <strong>AI Engineer</strong> · building multi-agent systems, RAG pipelines, and LLM evals at <strong>Spectatr AI</strong><br/>
+  LangGraph · MCP · vector memory · LangSmith observability<br/>
+  B.Tech Computer Science · VIT Bhopal · Class of 2026<br/>
+  <em>Google GenAI Exchange Hackathon Winner · MongoDB AI Hackathon 2026</em><br/>
 </div>
 
 <br/>
@@ -66,29 +65,41 @@
   <img src="assets/divider-projects.svg" width="100%">
 </div>
 
+### Selected systems
+
+| System | What it is | Link |
+| :--- | :--- | :--- |
+| **Argus** | Agentic analyst for MongoDB Atlas — NL → MQL pipelines, 5 insight modules, 3-layer write guard. MongoDB AI Hackathon 2026. | [repo](https://github.com/Kaos599/Argus) · [live](https://argus-three-inky.vercel.app) |
+| **Synctax** | Universal config sync CLI for the agentic dev stack — one config pushes MCP servers, agents & permissions to 9 AI clients. Published on npm. | [repo](https://github.com/Kaos599/Synctax) · [site](https://kaos599.github.io/Synctax/) |
+| **Cascade** | GenAI study companion with fine-tuned Gemini quiz generation — Google GenAI Exchange Hackathon 2024 winner. | [repo](https://github.com/Kaos599/Cascade-GenAI-Powered-Study-Companion) |
+| **BetterRAG** | RAG evaluation toolkit — empirically benchmarks chunking strategies (fixed-size vs recursive vs semantic). | [repo](https://github.com/Kaos599/BetterRAG) |
+| **Tathya** | Agentic fact-checking system — TRUE/FALSE/UNCERTAIN verdicts across 6+ live search tools. | [repo](https://github.com/Kaos599/Tathya-Fact-Checking-System) |
+| **Mini Metro JS** | Faithful browser re-implementation of the minimalist subway game — custom 60fps Canvas engine, React 19. | [repo](https://github.com/Kaos599/mini-metro-js) · [play](https://kaos599.github.io/mini-metro-js/) |
+| **Deep-Ass-Research** | IDE-agnostic agentic research framework — maps wide, commits to depth, verifies adversarially, writes a backlinked Obsidian vault. | [repo](https://github.com/Kaos599/Deep-Ass-Research) |
+
 <div align="center">
   <a href="https://github.com/Kaos599/Cascade">
     <img src="assets/card-cascade.svg" alt="Cascade" width="100%">
   </a>
   <br/>
-  <a href="https://github.com/Kaos599/Faraday">
+  <a href="https://github.com/Kaos599/Faraday-Web-Researcher-Agent">
     <img src="assets/card-faraday.svg" alt="Faraday" width="100%">
   </a>
   <br/>
-  <a href="https://github.com/Kaos599/LegalSphere">
-    <img src="assets/card-legalsphere.svg" alt="LegalSphere" width="100%">
-  </a>
-  <br/>
-  <a href="https://github.com/Kaos599/Sprout">
-    <img src="assets/card-sprout.svg" alt="Sprout" width="100%">
-  </a>
-  <br/>
-  <a href="https://github.com/Kaos599/Apollo">
+  <a href="https://github.com/Kaos599/Apollo-Synthetic-Data-Generator">
     <img src="assets/card-apollo.svg" alt="Apollo" width="100%">
   </a>
   <br/>
-  <a href="https://github.com/Kaos599/Numerate">
+  <a href="https://github.com/Kaos599/Applied-Numerical-Methods">
     <img src="assets/card-numerate.svg" alt="Numerate" width="100%">
+  </a>
+  <br/>
+  <a href="https://github.com/Kaos599/Synctax">
+    <img src="assets/card-synctax.svg" alt="Synctax" width="100%">
+  </a>
+  <br/>
+  <a href="https://github.com/Kaos599/Deep-Ass-Research">
+    <img src="assets/card-deep-ass-research.svg" alt="Deep-Ass-Research" width="100%">
   </a>
   <br/><br/>
   <a href="https://github.com/Kaos599?tab=repositories">
