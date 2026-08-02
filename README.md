@@ -65,18 +65,6 @@
   <img src="assets/divider-projects.svg" width="100%">
 </div>
 
-### Selected systems
-
-| System | What it is | Link |
-| :--- | :--- | :--- |
-| **Argus** | Agentic analyst for MongoDB Atlas — NL → MQL pipelines, 5 insight modules, 3-layer write guard. MongoDB AI Hackathon 2026. | [repo](https://github.com/Kaos599/Argus) · [live](https://argus-three-inky.vercel.app) |
-| **Synctax** | Universal config sync CLI for the agentic dev stack — one config pushes MCP servers, agents & permissions to 9 AI clients. Published on npm. | [repo](https://github.com/Kaos599/Synctax) · [site](https://kaos599.github.io/Synctax/) |
-| **Cascade** | GenAI study companion with fine-tuned Gemini quiz generation — Google GenAI Exchange Hackathon 2024 winner. | [repo](https://github.com/Kaos599/Cascade-GenAI-Powered-Study-Companion) |
-| **BetterRAG** | RAG evaluation toolkit — empirically benchmarks chunking strategies (fixed-size vs recursive vs semantic). | [repo](https://github.com/Kaos599/BetterRAG) |
-| **Tathya** | Agentic fact-checking system — TRUE/FALSE/UNCERTAIN verdicts across 6+ live search tools. | [repo](https://github.com/Kaos599/Tathya-Fact-Checking-System) |
-| **Mini Metro JS** | Faithful browser re-implementation of the minimalist subway game — custom 60fps Canvas engine, React 19. | [repo](https://github.com/Kaos599/mini-metro-js) · [play](https://kaos599.github.io/mini-metro-js/) |
-| **Deep-Ass-Research** | IDE-agnostic agentic research framework — maps wide, commits to depth, verifies adversarially, writes a backlinked Obsidian vault. | [repo](https://github.com/Kaos599/Deep-Ass-Research) |
-
 <div align="center">
   <a href="https://github.com/Kaos599/Cascade">
     <img src="assets/card-cascade.svg" alt="Cascade" width="100%">
@@ -121,11 +109,11 @@ Most software solves the problem and calls it done. I want the version that also
 
 That means different things depending on what I'm building:
 
-| If it's an **agent system** | It shouldn't just work — it should be legible. You should be able to watch it think. State transitions, memory writes, tool calls — LangGraph makes the architecture *the product*. |
+| If it's an **agent system** | It shouldn't just work; it should be legible. You should be able to watch it think. State transitions, memory writes, tool calls. LangGraph makes the architecture *the product*. |
 | :--- | :--- |
 | If it's an **ML model** | The loss curve is aesthetic. Watching a model learn to separate signal from noise is one of the most satisfying things I know. I care about what the architecture is doing at every layer, not just the final metric. |
-| If it's an **interface** | The terminal is enough canvas. Dense information, monospace type, a palette that doesn't apologize — if it looks like a cockpit, it probably works like one. |
-| If it's a **backend** | It should be invisible in the right way. No drama, no surprises, fast enough that the frontend never has to apologize for it. MCP protocol, FastAPI — tools that stay out of the way. |
+| If it's an **interface** | The terminal is enough canvas. Dense information, monospace type, a palette that doesn't apologize. If it looks like a cockpit, it probably works like one. |
+| If it's a **backend** | It should be invisible in the right way. No drama, no surprises, fast enough that the frontend never has to apologize for it. MCP protocol, FastAPI. Tools that stay out of the way. |
 
 The constraint I keep coming back to: **a beautiful thing that doesn't solve the problem is art. A solution that's ugly is a missed opportunity.** I want both, every time.
 
@@ -133,7 +121,7 @@ The constraint I keep coming back to: **a beautiful thing that doesn't solve the
 
 ### ∞ The Eternal Curiosity Problem
 
-I have a condition. It starts with one question — *why does attention scale like this?* — and three hours later I'm reading a 1976 paper on Byzantine fault tolerance wondering if distributed consensus has anything useful to say about multi-agent routing. (It does.)
+I have a condition. It starts with one question: *why does attention scale like this?* Three hours later I'm reading a 1976 paper on Byzantine fault tolerance wondering if distributed consensus has anything useful to say about multi-agent routing. (It does.)
 
 Some rabbit holes I've genuinely gone down: why transformers work when the theoretical guarantees are so weak · whether human memory consolidation during sleep maps to agent memory architectures · what makes a color palette *actually* good · the geometry of high-dimensional vector spaces and why cosine similarity is weirder than it looks.
 
