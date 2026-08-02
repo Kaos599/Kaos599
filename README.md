@@ -4,17 +4,14 @@
 <div align="center">
   <img height="200" src="https://media.tenor.com/xEFoZaAo2dMAAAAi/club-penguin-dance.gif"  />
 </div>
-  <a href="https://www.linkedin.com/in/harshdayal">
-    <img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=ec4899" alt="LinkedIn" />
+  <a href="https://www.linkedin.com/in/harshdayal" style="text-decoration:none">
+    <img src="assets/badge-linkedin.svg" alt="LinkedIn" />
   </a>
-  <a href="https://x.com/HarshDayal5">
-    <img src="https://img.shields.io/badge/X-0d1117?style=for-the-badge&logo=x&logoColor=ec4899" alt="X" />
+  <a href="mailto:harshdayal13@gmail.com" style="text-decoration:none">
+    <img src="assets/badge-email.svg" alt="Email" />
   </a>
-  <a href="mailto:harshdayal13@gmail.com">
-    <img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=ec4899" alt="Email" />
-  </a>
-  <a href="https://harshdayal.dev">
-    <img src="https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&logoColor=ec4899" alt="Portfolio" />
+  <a href="https://harshdayal.dev" style="text-decoration:none">
+    <img src="assets/badge-portfolio.svg" alt="Portfolio" />
   </a>
 </div>
 
@@ -90,8 +87,8 @@
     <img src="assets/card-deep-ass-research.svg" alt="Deep-Ass-Research" width="100%">
   </a>
   <br/><br/>
-  <a href="https://github.com/Kaos599?tab=repositories">
-    <img src="https://img.shields.io/badge/View_All_Repositories_%E2%86%92-0d1117?style=for-the-badge&logoColor=ec4899" alt="View All Repositories" />
+  <a href="https://github.com/Kaos599?tab=repositories" style="text-decoration:none">
+    <img src="assets/badge-repos.svg" alt="View All Repositories" />
   </a>
 </div>
 
