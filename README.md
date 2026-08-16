@@ -142,14 +142,14 @@ Some rabbit holes I've genuinely gone down: why transformers work when the theor
       </td>
       <td align="center">
         <a href="https://github.com/Kaos599">
-          <img src="https://github-readme-stats.vercel.app/api?username=Kaos599&show_icons=true&theme=tokyonight&hide_border=true&border_radius=4" alt="GitHub Stats" width="380" />
+          <img src="https://github-readme-stats-five-delta-16.vercel.app/api?username=Kaos599&show_icons=true&theme=tokyonight&hide_border=true&border_radius=4" alt="GitHub Stats" width="380" />
         </a>
       </td>
     </tr>
     <tr>
       <td colspan="2" align="center">
         <br/>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kaos599&layout=compact&theme=tokyonight&hide_border=true&border_radius=4" alt="Top Languages" width="380" />
+        <img src="https://github-readme-stats-five-delta-16.vercel.app/api/top-langs/?username=Kaos599&layout=compact&theme=tokyonight&hide_border=true&border_radius=4" alt="Top Languages" width="380" />
       </td>
     </tr>
   </table>
