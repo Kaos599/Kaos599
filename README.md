@@ -10,6 +10,9 @@
   <a href="mailto:harshdayal13@gmail.com" style="text-decoration:none">
     <img src="assets/badge-email.svg" alt="Email" />
   </a>
+  <a href="https://medium.com/@dayal700007" style="text-decoration:none">
+    <img src="assets/badge-medium.svg" alt="Medium" />
+  </a>
   <a href="https://harshdayal.dev" style="text-decoration:none">
     <img src="assets/badge-portfolio.svg" alt="Portfolio" />
   </a>
