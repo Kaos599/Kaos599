@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98" height="28" role="img" aria-label="Medium">
+  <title>Medium</title>
+  <rect width="98" height="28" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <g transform="translate(9 6) scale(0.6667)" fill="#ec4899">
+    <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75S21.15 6.25 21.81 6.25 24 8.83 24 12z"/>
+  </g>
+  <text x="63.2" y="18" text-anchor="middle" font-family="-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3">Medium</text>
+</svg>
