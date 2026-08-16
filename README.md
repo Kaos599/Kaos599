@@ -23,7 +23,7 @@
   <strong>AI Engineer</strong> · building multi-agent systems, RAG pipelines, and LLM evals at <strong>Spectatr AI</strong><br/>
   LangGraph · MCP · vector memory · LangSmith observability<br/>
   B.Tech Computer Science · VIT Bhopal · Class of 2026<br/>
-  <em>Google GenAI Exchange Hackathon Winner · MongoDB AI Hackathon 2026</em><br/>
+  <em>Google GenAI Exchange Hackathon Winner</em><br/>
 </div>
 
 <br/>
