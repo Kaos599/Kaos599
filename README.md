@@ -4,11 +4,8 @@
 <div align="center">
   <img height="200" src="https://media.tenor.com/xEFoZaAo2dMAAAAi/club-penguin-dance.gif"  />
 </div>
-  <a href="https://www.linkedin.com/in/harshdayal" style="text-decoration:none">
-    <img src="assets/badge-linkedin.svg" alt="LinkedIn" />
-  </a>
   <a href="mailto:harshdayal13@gmail.com" style="text-decoration:none">
-    <img src="assets/badge-email.svg" alt="Email" />
+    <img src="assets/badge-email.svg" alt="Email"/>
   </a>
   <a href="https://medium.com/@dayal700007" style="text-decoration:none">
     <img src="assets/badge-medium.svg" alt="Medium" />
@@ -25,7 +22,6 @@
   <strong>Harsh Dayal</strong> · Kaos599<br/>
   <strong>AI Engineer</strong> · building multi-agent systems, RAG pipelines, and LLM evals at <strong>Spectatr AI</strong><br/>
   LangGraph · MCP · vector memory · LangSmith observability<br/>
-  B.Tech Computer Science · Vellore Institute of Technology · Class of 2026<br/>
   <em>Google GenAI Exchange Hackathon Winner</em><br/>
 </div>
 
